@@ -1,0 +1,18 @@
+Assignment 4
+
+The main goal of this assignment was to develop a graph of actors connected by their movies given a list of movies from IMDB.
+Then with a graph of actors connected by movies I would find a path of movies which connected two actors (actor1 and actor2).
+I used a BFS algorithm which searched an actor's neighborhood (starting at actor1) which would then continue searching the
+neighborhoods of more actors until actor2 was found. A map would be marked by a key corresponding to the name of each actor visited, 
+with each map key having a pair continaing info on 1.) the actor previous to the actor represented by the key 2.) the movie which 
+connected them. After the BFS path finding algorithm ends, I would then be able to backtrack the map representing actor visits
+starting at actor2 until I reach actor1, all the while saving the actors and movies of the path to output.
+
+Usage
+The main executable in this assignment is sixdegrees from sixdegrees.cpp. sixdegrees takes two mandatory arguments with the first being input and
+the second being output. sixdegrees can be called with:
+  $ ./sixdegrees <INPUT.FILE> <OUTPUT.FILE>
+  
+Files Involved
+graph.cpp and graph.h contain the Movie, Actor, and Graph classes along with their associated methods. sixedegrees.cpp and the sixdegrees
+executable are used to parse in a movie list for populating a graph for queries as well as parsing in queries.

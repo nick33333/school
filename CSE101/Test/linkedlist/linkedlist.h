@@ -1,0 +1,52 @@
+// Filename: linkedlist.h
+// 
+// Header file for the class LinkedList that represents a linked list
+// 
+// Japheth Frolick, August 2019
+// C. Seshadhri, Jan 2020
+
+#ifndef LIST_H
+#define LIST_H
+
+#include <string>
+#include <vector>
+
+using namespace std;
+
+// node struct to hold data
+struct Node
+{
+	int data;
+	Node *next;
+};
+
+class LinkedList
+{
+	private:
+		Node *head; // Stores head of linked list
+	public:
+		LinkedList(); // Default constructor sets head to null
+        void insert(int); // insert int into list 
+        Node* find(int); // find int in list, and return pointer to node with that int. If there are multiple copies, this only finds one copy
+        Node* deleteNode(int); // remove a node with int (if it exists), and return pointer to deleted node. This does not delete all nodes with the value.
+        void deleteAndFreeNode(int); // remove a node with int (if it exists), and free the memory.
+		void deleteList(); // deletes every node to prevent memory leaks, and frees memory
+		string print(); // Construct string with data of list in order 
+		int length(); // Returns the length of the linked list
+        void reverse();
+        void reverse(int l);
+        void reversetail(int l);
+        
+        // SOLUTIONS
+        void kDel(int val, int k);
+        int lDelFind(int val); // relies on kDel
+        void lDel(int val); // relies on lDelFind and kDel
+        void nfDel(int val); // relies on kDel
+        bool isPalindrome();
+        int finder(int k); // helper for isPalindrome
+        void rotate(int x); // rotates list clockwise
+        void revrotate(int x); // rotates list in reverse direction
+        void dedup(); // deletes all duplicates in a list
+};
+
+#endif

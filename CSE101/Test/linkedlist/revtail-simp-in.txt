@@ -1,0 +1,17 @@
+i 40
+i 30
+i 20
+i 10
+p
+revtail 1
+p
+revtail 2
+p
+revtail 3
+p
+revtail 4
+p
+revtail 5
+p
+revtail 6
+p

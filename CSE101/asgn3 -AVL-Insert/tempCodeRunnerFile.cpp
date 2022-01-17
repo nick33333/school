@@ -1,0 +1,1 @@
+            myAVL.insert(val);
