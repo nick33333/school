@@ -1,0 +1,290 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job            count    min threads    max threads
+-----------  -------  -------------  -------------
+all                1              1              1
+callPaf            8              1              1
+fastas2Pafs        4              1              1
+paf2vcf            1              1              1
+sortPaf            5              1              1
+total             19              1              1
+
+Select jobs to execute...
+
+[Fri Jan  7 13:27:24 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_006364675.1_ASM636467v1_genomic.fna
+    output: pafsamples/GCA_006364675.1_ASM636467v1_genomic.fna.paf
+    jobid: 22
+    reason: Missing output files: pafsamples/GCA_006364675.1_ASM636467v1_genomic.fna.paf
+    wildcards: sample=GCA_006364675.1_ASM636467v1_genomic.fna
+    resources: tmpdir=/tmp
+
+Activating conda environment: /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/conda/9e127b4dc599a4d28e4c2c10ec8f1d1e
+[Fri Jan  7 13:27:26 2022]
+Finished job 22.
+1 of 19 steps (5%) done
+Select jobs to execute...
+
+[Fri Jan  7 13:27:26 2022]
+rule sortPaf:
+    input: pafsamples/GCA_006364675.1_ASM636467v1_genomic.fna.paf
+    output: pafsamples/GCA_006364675.1_ASM636467v1_genomic.fna.srt.paf
+    jobid: 21
+    reason: Missing output files: pafsamples/GCA_006364675.1_ASM636467v1_genomic.fna.srt.paf; Input files updated by another job: pafsamples/GCA_006364675.1_ASM636467v1_genomic.fna.paf
+    wildcards: sample=GCA_006364675.1_ASM636467v1_genomic.fna
+    resources: tmpdir=/tmp
+
+[Fri Jan  7 13:27:26 2022]
+Finished job 21.
+2 of 19 steps (11%) done
+Select jobs to execute...
+
+[Fri Jan  7 13:27:26 2022]
+rule callPaf:
+    input: pafsamples/GCA_006364675.1_ASM636467v1_genomic.fna.srt.paf
+    output: pafcalls/GCA_006364675.1_ASM636467v1_genomic.fna.var.txt
+    jobid: 20
+    reason: Missing output files: pafcalls/GCA_006364675.1_ASM636467v1_genomic.fna.var.txt; Input files updated by another job: pafsamples/GCA_006364675.1_ASM636467v1_genomic.fna.srt.paf
+    wildcards: sample=GCA_006364675.1_ASM636467v1_genomic.fna
+    resources: tmpdir=/tmp
+
+Activating conda environment: /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/conda/9e127b4dc599a4d28e4c2c10ec8f1d1e
+[Fri Jan  7 13:27:27 2022]
+Finished job 20.
+3 of 19 steps (16%) done
+Select jobs to execute...
+
+[Fri Jan  7 13:27:27 2022]
+rule sortPaf:
+    input: pafsamples/GCA_001641025.1_ASM164102v1_genomic.fna.paf
+    output: pafsamples/GCA_001641025.1_ASM164102v1_genomic.fna.srt.paf
+    jobid: 6
+    reason: Missing output files: pafsamples/GCA_001641025.1_ASM164102v1_genomic.fna.srt.paf
+    wildcards: sample=GCA_001641025.1_ASM164102v1_genomic.fna
+    resources: tmpdir=/tmp
+
+[Fri Jan  7 13:27:27 2022]
+Finished job 6.
+4 of 19 steps (21%) done
+Select jobs to execute...
+
+[Fri Jan  7 13:27:27 2022]
+rule callPaf:
+    input: pafsamples/GCA_001641025.1_ASM164102v1_genomic.fna.srt.paf
+    output: pafcalls/GCA_001641025.1_ASM164102v1_genomic.fna.var.txt
+    jobid: 5
+    reason: Missing output files: pafcalls/GCA_001641025.1_ASM164102v1_genomic.fna.var.txt; Input files updated by another job: pafsamples/GCA_001641025.1_ASM164102v1_genomic.fna.srt.paf
+    wildcards: sample=GCA_001641025.1_ASM164102v1_genomic.fna
+    resources: tmpdir=/tmp
+
+Activating conda environment: /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/conda/9e127b4dc599a4d28e4c2c10ec8f1d1e
+[Fri Jan  7 13:27:28 2022]
+Finished job 5.
+5 of 19 steps (26%) done
+Select jobs to execute...
+
+[Fri Jan  7 13:27:29 2022]
+rule callPaf:
+    input: pafsamples/GCA_003945425.1_ASM394542v1_genomic.fna.srt.paf
+    output: pafcalls/GCA_003945425.1_ASM394542v1_genomic.fna.var.txt
+    jobid: 11
+    reason: Missing output files: pafcalls/GCA_003945425.1_ASM394542v1_genomic.fna.var.txt
+    wildcards: sample=GCA_003945425.1_ASM394542v1_genomic.fna
+    resources: tmpdir=/tmp
+
+Activating conda environment: /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/conda/9e127b4dc599a4d28e4c2c10ec8f1d1e
+[Fri Jan  7 13:27:29 2022]
+Finished job 11.
+6 of 19 steps (32%) done
+Select jobs to execute...
+
+[Fri Jan  7 13:27:29 2022]
+rule callPaf:
+    input: pafsamples/GCA_002895385.1_ASM289538v1_genomic.fna.srt.paf
+    output: pafcalls/GCA_002895385.1_ASM289538v1_genomic.fna.var.txt
+    jobid: 8
+    reason: Missing output files: pafcalls/GCA_002895385.1_ASM289538v1_genomic.fna.var.txt
+    wildcards: sample=GCA_002895385.1_ASM289538v1_genomic.fna
+    resources: tmpdir=/tmp
+
+Activating conda environment: /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/conda/9e127b4dc599a4d28e4c2c10ec8f1d1e
+[Fri Jan  7 13:27:31 2022]
+Finished job 8.
+7 of 19 steps (37%) done
+Select jobs to execute...
+
+[Fri Jan  7 13:27:31 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_006094915.1_ASM609491v1_genomic.fna
+    output: pafsamples/GCA_006094915.1_ASM609491v1_genomic.fna.paf
+    jobid: 19
+    reason: Missing output files: pafsamples/GCA_006094915.1_ASM609491v1_genomic.fna.paf
+    wildcards: sample=GCA_006094915.1_ASM609491v1_genomic.fna
+    resources: tmpdir=/tmp
+
+Activating conda environment: /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/conda/9e127b4dc599a4d28e4c2c10ec8f1d1e
+[Fri Jan  7 13:27:33 2022]
+Finished job 19.
+8 of 19 steps (42%) done
+Select jobs to execute...
+
+[Fri Jan  7 13:27:33 2022]
+rule sortPaf:
+    input: pafsamples/GCA_006094915.1_ASM609491v1_genomic.fna.paf
+    output: pafsamples/GCA_006094915.1_ASM609491v1_genomic.fna.srt.paf
+    jobid: 18
+    reason: Missing output files: pafsamples/GCA_006094915.1_ASM609491v1_genomic.fna.srt.paf; Input files updated by another job: pafsamples/GCA_006094915.1_ASM609491v1_genomic.fna.paf
+    wildcards: sample=GCA_006094915.1_ASM609491v1_genomic.fna
+    resources: tmpdir=/tmp
+
+[Fri Jan  7 13:27:34 2022]
+Finished job 18.
+9 of 19 steps (47%) done
+Select jobs to execute...
+
+[Fri Jan  7 13:27:34 2022]
+rule callPaf:
+    input: pafsamples/GCA_004136255.1_ASM413625v1_genomic.fna.srt.paf
+    output: pafcalls/GCA_004136255.1_ASM413625v1_genomic.fna.var.txt
+    jobid: 14
+    reason: Missing output files: pafcalls/GCA_004136255.1_ASM413625v1_genomic.fna.var.txt
+    wildcards: sample=GCA_004136255.1_ASM413625v1_genomic.fna
+    resources: tmpdir=/tmp
+
+Activating conda environment: /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/conda/9e127b4dc599a4d28e4c2c10ec8f1d1e
+[Fri Jan  7 13:27:34 2022]
+Finished job 14.
+10 of 19 steps (53%) done
+Select jobs to execute...
+
+[Fri Jan  7 13:27:34 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001027105.1_ASM102710v1_genomic.fna
+    output: pafsamples/GCA_001027105.1_ASM102710v1_genomic.fna.paf
+    jobid: 4
+    reason: Missing output files: pafsamples/GCA_001027105.1_ASM102710v1_genomic.fna.paf
+    wildcards: sample=GCA_001027105.1_ASM102710v1_genomic.fna
+    resources: tmpdir=/tmp
+
+Activating conda environment: /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/conda/9e127b4dc599a4d28e4c2c10ec8f1d1e
+[Fri Jan  7 13:27:37 2022]
+Finished job 4.
+11 of 19 steps (58%) done
+Select jobs to execute...
+
+[Fri Jan  7 13:27:37 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_900607265.1_BPH2003_genomic.fna
+    output: pafsamples/GCA_900607265.1_BPH2003_genomic.fna.paf
+    jobid: 25
+    reason: Missing output files: pafsamples/GCA_900607265.1_BPH2003_genomic.fna.paf
+    wildcards: sample=GCA_900607265.1_BPH2003_genomic.fna
+    resources: tmpdir=/tmp
+
+Activating conda environment: /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/conda/9e127b4dc599a4d28e4c2c10ec8f1d1e
+[Fri Jan  7 13:27:40 2022]
+Finished job 25.
+12 of 19 steps (63%) done
+Select jobs to execute...
+
+[Fri Jan  7 13:27:40 2022]
+rule callPaf:
+    input: pafsamples/GCA_006094915.1_ASM609491v1_genomic.fna.srt.paf
+    output: pafcalls/GCA_006094915.1_ASM609491v1_genomic.fna.var.txt
+    jobid: 17
+    reason: Missing output files: pafcalls/GCA_006094915.1_ASM609491v1_genomic.fna.var.txt; Input files updated by another job: pafsamples/GCA_006094915.1_ASM609491v1_genomic.fna.srt.paf
+    wildcards: sample=GCA_006094915.1_ASM609491v1_genomic.fna
+    resources: tmpdir=/tmp
+
+Activating conda environment: /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/conda/9e127b4dc599a4d28e4c2c10ec8f1d1e
+[Fri Jan  7 13:27:40 2022]
+Finished job 17.
+13 of 19 steps (68%) done
+Select jobs to execute...
+
+[Fri Jan  7 13:27:40 2022]
+rule sortPaf:
+    input: pafsamples/GCA_900607265.1_BPH2003_genomic.fna.paf
+    output: pafsamples/GCA_900607265.1_BPH2003_genomic.fna.srt.paf
+    jobid: 24
+    reason: Missing output files: pafsamples/GCA_900607265.1_BPH2003_genomic.fna.srt.paf; Input files updated by another job: pafsamples/GCA_900607265.1_BPH2003_genomic.fna.paf
+    wildcards: sample=GCA_900607265.1_BPH2003_genomic.fna
+    resources: tmpdir=/tmp
+
+[Fri Jan  7 13:27:41 2022]
+Finished job 24.
+14 of 19 steps (74%) done
+Select jobs to execute...
+
+[Fri Jan  7 13:27:41 2022]
+rule callPaf:
+    input: pafsamples/GCA_900607265.1_BPH2003_genomic.fna.srt.paf
+    output: pafcalls/GCA_900607265.1_BPH2003_genomic.fna.var.txt
+    jobid: 23
+    reason: Missing output files: pafcalls/GCA_900607265.1_BPH2003_genomic.fna.var.txt; Input files updated by another job: pafsamples/GCA_900607265.1_BPH2003_genomic.fna.srt.paf
+    wildcards: sample=GCA_900607265.1_BPH2003_genomic.fna
+    resources: tmpdir=/tmp
+
+Activating conda environment: /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/conda/9e127b4dc599a4d28e4c2c10ec8f1d1e
+[Fri Jan  7 13:27:42 2022]
+Finished job 23.
+15 of 19 steps (79%) done
+Select jobs to execute...
+
+[Fri Jan  7 13:27:42 2022]
+rule sortPaf:
+    input: pafsamples/GCA_001027105.1_ASM102710v1_genomic.fna.paf
+    output: pafsamples/GCA_001027105.1_ASM102710v1_genomic.fna.srt.paf
+    jobid: 3
+    reason: Missing output files: pafsamples/GCA_001027105.1_ASM102710v1_genomic.fna.srt.paf; Input files updated by another job: pafsamples/GCA_001027105.1_ASM102710v1_genomic.fna.paf
+    wildcards: sample=GCA_001027105.1_ASM102710v1_genomic.fna
+    resources: tmpdir=/tmp
+
+[Fri Jan  7 13:27:42 2022]
+Finished job 3.
+16 of 19 steps (84%) done
+Select jobs to execute...
+
+[Fri Jan  7 13:27:42 2022]
+rule callPaf:
+    input: pafsamples/GCA_001027105.1_ASM102710v1_genomic.fna.srt.paf
+    output: pafcalls/GCA_001027105.1_ASM102710v1_genomic.fna.var.txt
+    jobid: 2
+    reason: Missing output files: pafcalls/GCA_001027105.1_ASM102710v1_genomic.fna.var.txt; Input files updated by another job: pafsamples/GCA_001027105.1_ASM102710v1_genomic.fna.srt.paf
+    wildcards: sample=GCA_001027105.1_ASM102710v1_genomic.fna
+    resources: tmpdir=/tmp
+
+Activating conda environment: /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/conda/9e127b4dc599a4d28e4c2c10ec8f1d1e
+[Fri Jan  7 13:27:43 2022]
+Finished job 2.
+17 of 19 steps (89%) done
+Select jobs to execute...
+
+[Fri Jan  7 13:27:43 2022]
+rule paf2vcf:
+    input: pafcalls/GCA_001027105.1_ASM102710v1_genomic.fna.var.txt, pafcalls/GCA_001641025.1_ASM164102v1_genomic.fna.var.txt, pafcalls/GCA_002895385.1_ASM289538v1_genomic.fna.var.txt, pafcalls/GCA_003945425.1_ASM394542v1_genomic.fna.var.txt, pafcalls/GCA_004136255.1_ASM413625v1_genomic.fna.var.txt, pafcalls/GCA_006094915.1_ASM609491v1_genomic.fna.var.txt, pafcalls/GCA_006364675.1_ASM636467v1_genomic.fna.var.txt, pafcalls/GCA_900607265.1_BPH2003_genomic.fna.var.txt
+    output: all.txt
+    jobid: 1
+    reason: Missing output files: all.txt; Input files updated by another job: pafcalls/GCA_002895385.1_ASM289538v1_genomic.fna.var.txt, pafcalls/GCA_006364675.1_ASM636467v1_genomic.fna.var.txt, pafcalls/GCA_900607265.1_BPH2003_genomic.fna.var.txt, pafcalls/GCA_001641025.1_ASM164102v1_genomic.fna.var.txt, pafcalls/GCA_001027105.1_ASM102710v1_genomic.fna.var.txt, pafcalls/GCA_004136255.1_ASM413625v1_genomic.fna.var.txt, pafcalls/GCA_003945425.1_ASM394542v1_genomic.fna.var.txt, pafcalls/GCA_006094915.1_ASM609491v1_genomic.fna.var.txt
+    resources: tmpdir=/tmp
+
+[Fri Jan  7 13:27:45 2022]
+Finished job 1.
+18 of 19 steps (95%) done
+Select jobs to execute...
+
+[Fri Jan  7 13:27:45 2022]
+localrule all:
+    input: all.txt
+    jobid: 0
+    reason: Input files updated by another job: all.txt
+    resources: tmpdir=/tmp
+
+[Fri Jan  7 13:27:45 2022]
+Finished job 0.
+19 of 19 steps (100%) done
+Complete log: /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/log/2022-01-07T132720.694741.snakemake.log

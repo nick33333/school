@@ -1,0 +1,11 @@
+prefix=/mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/conda/c68eb4b7302b5235c4b7c19ca7e26b8d
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: kadm-client
+Description: Kerberos administration client library
+Version: 1.19.2
+Requires.private: mit-krb5-gssapi gssrpc
+Cflags: -I${includedir}
+Libs: -L${libdir} -lkadm5clnt_mit

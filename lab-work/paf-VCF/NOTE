@@ -1,0 +1,8 @@
+Check divergence between ref genome and GCA_017834975.1_ASM1783497v1_genomic.US.fna
+
+NOTES: 
+- paftools.js is from the minimap2 package
+- Pipeline makes use of Snakemake and conda environments
+- samples dir is to be filled with .fna (fasta) files of whole genome assemblies
+- ref dir should contain reference genome assembly and associated index file (.fai)
+- conda environment from envs should be created by user and activated before calling snakemake

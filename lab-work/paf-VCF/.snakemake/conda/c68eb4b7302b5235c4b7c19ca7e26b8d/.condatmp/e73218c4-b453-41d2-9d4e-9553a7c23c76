@@ -1,0 +1,11 @@
+prefix=/mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/conda/c68eb4b7302b5235c4b7c19ca7e26b8d
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: mit-krb5-gssapi
+Description: Kerberos implementation of the GSSAPI
+Version: 1.19.2
+Requires.private: mit-krb5
+Cflags: -I${includedir}
+Libs: -L${libdir} -lgssapi_krb5

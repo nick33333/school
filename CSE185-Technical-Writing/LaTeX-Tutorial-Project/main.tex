@@ -1,0 +1,348 @@
+% Preamble
+\documentclass[12pt,journal,compsoc]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{float}
+\title{LaTeX Tutorial Draft}
+\author{Nick Chan}
+\date{\today}
+\begin{document}
+
+
+
+\markboth{\LaTeX\ IEEE Template}%
+{Moulds \MakeLowercase{\textit{et al.}}: CMPE185}
+
+\IEEEpubid{0000--0000/00\$00.00~\copyright~2007 IEEE}
+
+\IEEEcompsoctitleabstractindextext{%
+\begin{abstract}
+The abstract goes here.
+\end{abstract}
+
+\begin{IEEEkeywords}
+CMPE185, \LaTeX\ Tutorial, IEEEtran, journal, \LaTeX, paper, template.
+\end{IEEEkeywords}}
+
+\maketitle
+
+% Section 1
+\section{Introduction}
+\IEEEPARstart{T}{his} tutorial will guide the reader through the fundamentals of creating a document in \LaTeX\/. Features such as tables, graphics, formulas and other common conventions for making a \LaTeX\ document will be covered.
+% Subsection 1
+\subsection*{Why use \LaTeX\/?}
+Unlike popular word processors such as Google Docs or Word, \LaTeX\ is a typographic designer. Although all these programs fit the role of a document preparation system, \LaTeX\ provides the user with a greater ability to populate papers with custom graphics, tables, equations, bibliographies and much more. Overall, \LaTeX\ is better suited for the creation of academic papers and books than the previous word processors mentioned.
+
+\subsection*{Before we Start}
+The first thing we need to do to begin our \LaTeX\ document would be to write our preamble. This usually consists of a call to our document class with the \emph{\textbackslash documentclass[pt-units, desired-library]{document-class}} command and a call to include packages with the \emph{\textbackslash usepackage\{package-name\}} command. We may follow these calls with commands to include our title, author and date before finally beginning our document with \emph{\textbackslash document\}}. Remember to end your document with \emph{\textbackslash end document\}} at the end of your .tex file.
+
+\subsubsection*{Example: Preamble Code}
+{\small
+\begin{center}
+\begin{verbatim}
+\documentclass[12pt,journal,compsoc]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{float}
+\title{LaTeX Tutorial Draft}
+\author{Nick Chan}
+\date{\today}
+\end{verbatim}
+\end{center}}
+
+\subsubsection*{Reserved Characters}
+\begin{center}
+\begin{tabular}{c l}
+Character & Usage \\
+\hline
+\#  & Defines use of arguments\\
+\hline
+\$ \$ & Begins/ends math mode\\
+\hline
+\& & Delimits items in an array/table\\
+\hline
+\% &  Creates a comment\\
+\hline
+\{ \} & Delimits command calls/scope\\
+\hline
+\_ & Subscripts proceeding text\\
+\hline
+\textbackslash & Enables/disables command call\\
+\hline
+\texttildelow & Creates an unbreakable space\\
+\hline
+\^{} & Superscripts proceeding text\\
+\hline
+
+\end{tabular}
+\end{center}
+
+
+\section{Tables}
+% Subsection 2: TABLES
+\subsection{Table and Tabular Commands}
+\LaTeX\ offers two main commands for creating tables. The first command we will talk about is \emph{tabular}, which is called by \emph{\textbackslash begin\{tabular\}}. Tabular is required for typesetting rows and columns to form a table. The second option is \emph{table} which is called by \emph{\textbackslash begin\{table\}[h]}. Table can be called around a tabular call to create a float that includes the table made by tabular.\cite{table:klaus} A float is a figure that cannot be broken when space is exhausted at the end of a page. Due to the nature of these two commands, tabular is called inside of a table call.
+
+\subsection{Implementing a Table}
+To set up a table with tabular, we must first create a table environment  (method shown in the code for Table 1).  This is done by calling \emph{\textbackslash begin\{table\}[h]}. Once this is called you have the option of calling \emph{\textbackslash renewcommand\{arraystretch\}\{positive-value\}} to alter the stretch of the table and \emph{\textbackslash caption\{your caption\}} to add a caption. You are now able to call \emph{\textbackslash begin\{tabular\}\{desired alignments for columns\}}. The options for alignments are \emph{l, r \emph{and} c} which stand for left, right and center respectively. You may optionally add vertical bars ( $|$ ) around each column designation to add a vertical bar to the table. Each entry into a table is made by the row. Rows of tables are composed of a series of alternating \emph{\textbackslash hline} calls and  \emph{ITEM X \& ITEM Y \& ITEM Z \textbackslash \textbackslash} calls as seen in the example code for Table 1.
+% Example table
+\subsection*{Example:}
+\begin{table}[h]
+\renewcommand{\arraystretch}{2}
+\caption{Example Table}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\multicolumn{3}{|c|}{3x3 Table}\\
+\hline
+Col 1 & Col 2 & Col 3\\
+\hline
+Col 1 & Col 2 & Col 3\\
+\hline
+Col 1 & Col 2 & Col 3\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+% Verbatim of table 1 code
+\subsubsection*{Table 1 Code:}
+{\small
+\begin{center}
+\begin{verbatim}
+\begin{table}[h]
+\renewcommand{\arraystretch}{2}
+\caption{Example Table}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\multicolumn{3}{|c|}{3x3 Table}\\
+\hline
+Col 1 & Col 2 & Col 3\\
+\hline
+Col 1 & Col 2 & Col 3\\
+\hline
+Col 1 & Col 2 & Col 3\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+\end{verbatim}
+\end{center}}
+
+% Characters and symbols subsection
+\subsubsection*{Characters and Symbols}
+\begin{center}
+\begin{tabular}{c l}
+Character & Usage\\
+\hline
+l&Left aligns table entry\\
+\hline
+c&Center aligns table entry\\
+\hline
+r&Right aligns table entry\\
+\hline
+$|$&Specifies table vertical bar\\
+\hline
+\textbackslash hline&Specifies table horizontal line\\
+\hline
+\textbackslash\textbackslash&Specifies start of new line\\
+\hline
+\&&Delimits column entries\\
+\end{tabular}
+\end{center}
+
+% Section 3: FIGURES
+\section{Figures}
+Along with tables, \LaTeX\ provides the user with the ability to include figures and graphics in their documents. Options to transform the sizes and orientations of figures and graphics are also available. One of the most commonly used commands for this is the \emph{\textbackslash includegraphics[scale=positive-number]\{img-name\}}, which comes from the graphicx package. The graphicx package can only be used if \emph{\textbackslash usepackage\{graphicx\}} is called in your preamble.
+
+\subsection{Includegraphics Command}
+The \emph{\textbackslash includegraphics[scale=positive-value, angle=value-in-degrees]\{img-name\}} takes in three arguments, the first two being optional and the last being required. The first optional argument is scale, which takes in a positive value to size your image. You may also enter \emph{[width=positive-value, height=positive-value]} as an argument, mutually exclusive to \emph{[scale=positive-value]}. The second optional argument is angle which takes in a value for the degrees that you would like to rotate your image. The required argument is the name/path to the graphic that you would like to include. 
+
+\subsection{Implementing a Figure}
+Since this image is treated as a figure, we may follow a layout that you may recognize from the implementation of the table. This time around though, we will begin our implementation with \emph{\textbackslash begin\{figure\}[h]}. Once this command is called we may now center our figure with \emph{\textbackslash begin\{center\}}. Now we can call \emph{\textbackslash includegraphics[scale=positive-value, angle=value-in-degrees]\{img-name\}} to include our desired image which will be center aligned. To top off our image, we may add a caption using the \emph{\textbackslash caption\{Your caption\} \emph{command and a label with} \textbackslash label \{Your label\}} command. Finally, once the calls to  \emph{\textbackslash end\{center\}} and \emph{\textbackslash end\{figure\}} are made, you have finished this implementation of a figure.
+
+\subsection*{Example: Figure of a Titration Plot}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=2.5in]{tPlot.png}
+    \caption{Titration Plot graphing pH vs volume of base (mL). Raw data for plot sourced from Titration\_Plot.pdf under latex\_185 folder from CSE 185. From this titration plot, we can estimate the volume of base (titrant) required to reach the equivalence point of our analyte. The equivalence point is the point where our graph changes from concave to convex (in this case when our titrant is a base) or vice versa. The equivalence point that this plot helps us identify yields information about our analyte's concentration after a few stoichiometric calculations}
+    \label{fig:my_label}
+\end{figure}
+
+\subsubsection*{Titration Plot Code:}
+{\small
+\begin{center}
+\begin{verbatim}
+\subsection*{Example: Figure of...}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=2.5in]
+    {tPlot.png}
+    \caption{Titration Plot graphing...}
+    \label{fig:my_label}
+\end{figure}
+\end{verbatim}
+\end{center}}
+
+\section{Mathematical Formulas}
+One of \LaTeX\/'s claims to fame is its ability to typeset practically every mathematical equation that you can learn about in a lifetime. Here I will go over the basics of typesetting in mathematical notation with \LaTeX\ .
+\subsection{Inline and Displaymath Commands}
+ There are two main environments that \LaTeX\ will allow you to typeset mathematical formulas. The first is the inline mode which is delimited by \emph{\textbackslash ( \textbackslash), \$ \$ \emph{or} \textbackslash begin\{math\} \emph{and} \textbackslash end\{math\}}. The second is the display mode which is delimited by \textbackslash[ \textbackslash], \$\$ \$\$, \emph{\textbackslash begin\{displaymath\} \emph{and} \textbackslash end\{displaymath\}} or \emph{\textbackslash begin\{equation\} \emph{and} \textbackslash end\{equation\}} \cite{OL:math}.
+\subsection{Simple Formulas for Arithmetic}
+\subsubsection*{Example:}
+\begin{center}
+    $a_{sub}+b^{super}-\frac{c}{d}$
+\end{center}
+Typesetting for arithmetic equations like the one above is as simple as implementing \emph{\$a\_\{sub\}+b\^{}\{super\}-\textbackslash frac\{c\}\{d\}\$} for an inline example or \emph{\textbackslash begin\{displaymath\}a\_\{sub\}+b\^{}\{super\}-\textbackslash frac\{c\}\{d\}} \emph{\textbackslash end\{displaymath\}} for a displaymath example. Notice how these commands can be used to enable you to typeset subscripts, superscripts and fractions which are characteristic of mathematical notation. The message I am trying to convey through this example is that any one of the delimiters previously mentioned can be used for typesetting mathematical formulae. However, for a few particular cases, you may prefer to use one over another.
+\subsection{Implementing Fractions and Arrays}
+\subsubsection*{Example: The Combination Formula}
+\[ 
+\frac{n!}{k!(n-k)!} =
+\left( 
+\begin{array}{c}
+n\\k
+\end{array}
+\right)
+\]
+This expression is one that you wouldn't want to typeset using inline, which should be reserved for shorter and simpler equations to be used within paragraphs or text. An expression like the one above is best taken care of by the displaymath environment which is best for handling mathematical formulae and expressions that are set outside of a block of text. In the following code for this example, you will see how the displaymath delimiters \textbackslash[ \textbackslash] have been used to set up an environment and how ,in addition to the fraction created on the left hand side, we have made a $2\times1$ array of n and k. Important to note is that the syntax of arrays is almost identical to that of tables
+\subsubsection*{Example Fraction and Array Expression Code}
+{\small
+\begin{center}
+\begin{verbatim}
+\[ 
+\frac{n!}{k!(n-k)!} =
+\left( 
+\begin{array}{c}
+n\\k
+\end{array}
+\right)
+\]
+\end{verbatim}
+\end{center}}
+
+\subsubsection*{Mathematical Symbols}
+\begin{center}
+\begin{tabular}{c c | c c}
+Command & Symbol & Command & Symbol\\
+\hline
+\$\textbackslash alpha\$ & $\alpha$ & \$\textbackslash leq\$ & $\leq$\\
+\hline
+\$\textbackslash beta\$ & $\beta$ & \$\textbackslash geq\$ & $\geq$\\
+\hline
+\$\textbackslash Gamma\$ & $\Gamma$ & \$\textbackslash cap\$ & $\cap$\\
+\hline
+\$\textbackslash Delta\$ & $\Delta$ & \$\textbackslash cup\$ & $\cup$\\
+\hline
+\$\textbackslash Sigma\$ & $\Sigma$ & \$\textbackslash oplus\$ & $\oplus$\\
+\end{tabular}
+\end{center}
+
+\section{Making References Sections}
+When writing an academic paper, the need to label, cite or refer to outside resources often arises. To satisfy this need, /LaTeX/ offers the user the ability to typeset using the \emph{thebibliography} environment which is populated by \emph{bibitems}. The following commands will be used in the craetion of a \LaTeX\ bibliography:
+
+\subsubsection*{Commands}
+\begin{center}
+\begin{tabular}{c l}
+Command & Usage\\
+\hline
+\textbackslash label & Marks a figure with a number\\
+\hline
+\textbackslash ref & Yields name of labeled figure\\
+\hline
+\textbackslash cite & Yields bibliography item no.\\
+\end{tabular}
+\end{center}
+
+\subsection{Label, Cite, and Ref Commands}
+I will demonstrate the use of the commands listed above using my titration plot figure as an example. I will pretend that the plot came from the textbook \emph{Chemistry} by Steven S. Zumdahl to simulate how these commands can be used in citating and referencing.
+\label{Chem:t}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=2.5in]{tPlot.png}
+    \caption{\textbf{\cite{Chemistry:tplot}} 
+    Titration Plot~\textbf{\ref{Chem:t}} graphing pH vs volume of 
+    base (mL). Raw data for plot...}
+\end{figure}
+\noindent
+If you notice anything different about this implementation, it would be the presence of \textbf{\cite{Chemistry:tplot}} at the beginning of the caption and \textbf{\ref{Chem:t}} after the words \emph{titration plot}. \cite{Chemistry:tplot} is known as a numbered reference citation, and corresponds to a reference located in the bibliography section of this document. \ref{Chem:t} is known as a reference to a label set in a section of this document (section \ref{Chem:t}).
+
+\subsubsection*{Example Code: Labeling, Citation and Reference in Caption}
+The use of \emph{\textbackslash cite\{\}} can be used just as a regular text character either on an image itself, an image caption or an inline text citation. Here it is used inline within the image caption. The use of \emph{\textbackslash ref\{\}} relies on a label being set in a section of a \LaTeX\ document which can be seen in the example code below. Once a label is set in a section, \emph{\textbackslash ref\{\}} can be called to display the section label which an item is referring to.
+
+{\small
+\begin{center}
+\begin{verbatim}
+\label{sec:greetings}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=2.5in]{tPlot.png}
+    \caption{\cite{Chemistry:tplot} 
+    Titration Plot~\ref{sec:greetings} 
+    graphing pH vs volume of 
+    base (mL). Raw data for plot...}
+\end{figure}
+\end{verbatim}
+\end{center}}
+
+\subsection{bibitems for thebibliography}
+With each unique entry for \emph{\textbackslash cite\{\}}, a corresponding \emph{\textbackslash bibitem\{\}} is needed in the \emph{\textbackslash begin\{thebibliography\}} environment section of a \LaTeX\ document. A \emph{\textbackslash begin\{thebibliography\}} environment section is often placed at the end of a document where bi biographies are conventionally placed. Inside the \emph{\textbackslash begin\{thebibliography\}} goes \emph{\textbackslash bibitem\{\}} entries which, as you have seen before, can referenced in various places with a corresponding call to \emph{\textbackslash cite\{\}}.
+
+\subsubsection*{Example Code: thebibliography Section Corresponding to \ref{Chem:t} Titration Plot}
+{\small
+\begin{center}
+\begin{verbatim}
+\begin{figure}[h]
+\begin{thebibliography}{1}
+\bibitem{Chemistry:tplot}
+S.~Zumdahl and S.~A. Zumdahl, 
+\emph{Chemistry}, 
+7th~ed.\hskip 1em plus
+0.5em minus 0.4em\relax Cengage Learning, 
+2017.
+\end{thebibliography}
+\end{verbatim}
+\end{center}}
+%-------------------------------------------------------------------------------------------------
+
+\section{Making Acknowledgements}
+An acknowledgements section can be made to thank anyone in particular for assisting or guiding you in your work. All that's required to make an acknowledgements section is a sincere acknowledgement that you would like to make and appropriate formatting of your section header. The code for an Acknowledgements Section is pretty self explanatory as it is just a section header with an asterisk followed by the body text of your acknowledgements.
+
+\subsubsection*{Example Code: Acknowledgement Section}
+Code would just resemble plain text if it weren't for the inclusion of the section header.
+\begin{center}
+\begin{verbatim}
+\section*{Acknowledgements}
+I would like to thank my supervisors 
+Dr. XXX and Dr. XXX for all their help 
+and advice with this PhD. I would also 
+like to thank my...
+\end{verbatim}
+\end{center}
+\cite{discov:exAck}
+
+\section{Conclusion}
+Having completed this tutorial, I hope you have absorbed the fundamentals to \LaTeX\ typesetting, table making, figure incorporation, \LaTeX\ mathematical notation, \LaTeX\ assisted citation and acknowledgements. Thank you for your time and I wish you the best of luck with learning beyond this tutorial.
+
+\section*{Acknowledgements}
+I would like to thank the people who run the Overleaf manual pages for their services. The manual pages are well written and have enabled me to pick up on \LaTeX\ relatively quickly. I would also like to thank Leslie Lamport and his friends for letting me make cool looking documents with \LaTeX\/. Finally, I would like to thank my dad for lending me his old \LaTeX\ handbook from 1986 which happens to be by Leslie Lamport, so I guess I'm thanking Leslie Lamport again.
+
+\begin{thebibliography}{1}
+\bibitem{table:klaus}
+K. H\"{o}ppner, \emph{Typesetting tables with \LaTeX\ } \hskip 1em plus
+  0.5em minus 0.4em\relax Darmstadt, Germany: Annual Meeting, 2007.
+\bibitem{Chemistry:tplot}
+S.~Zumdahl and S.~A. Zumdahl, \emph{Chemistry}, 7th~ed.\hskip 1em plus
+  0.5em minus 0.4em\relax Cengage Learning, 2017.
+\bibitem{OL:math}
+Overleaf, \emph{Display style in math mode} \hskip 1em plus
+  0.5em minus 0.4em\relax London, United Kingdom: Overleaf, 2021. [Online]. Available:
+  $https://www.overleaf.com/learn/latex/display_style_in_math_mode$
+\bibitem{discov:exAck}
+DiscoverPhDs, \emph{Acknowledgements for PhD Thesis and Dissertations – Explained}\hskip 1em plus
+  0.5em minus 0.4em\relax London, United Kingdom: DiscoverPhDs, 2021. [Online]. Available:
+  $https://www.discoverphds.com/advice/doing/acknowledgements-for-thesis-and-dissertations$
+\end{thebibliography}
+
+\end{document}
+

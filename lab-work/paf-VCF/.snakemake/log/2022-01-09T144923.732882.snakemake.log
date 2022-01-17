@@ -1,0 +1,2236 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job stats:
+job             count    min threads    max threads
+------------  -------  -------------  -------------
+all                 1              1              1
+callPaf            28              1              1
+end                 1              1              1
+fastas2Pafs        28              1              1
+mergeVcfs           1              1              1
+normVcfs           28              1              1
+paf2vcf            28              1              1
+prepNormVcfs       28              1              1
+sortPaf            28              1              1
+total             171              1              1
+
+Select jobs to execute...
+
+[Sun Jan  9 14:49:25 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001350995.1_8489_7_11_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001350995.1_8489_7_11_genomic-UK.fna.paf
+    jobid: 32
+    wildcards: sample=GCA_001350995.1_8489_7_11_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:49:25 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001351235.1_8489_7_25_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001351235.1_8489_7_25_genomic-UK.fna.paf
+    jobid: 74
+    wildcards: sample=GCA_001351235.1_8489_7_25_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:49:29 2022]
+Finished job 74.
+1 of 171 steps (1%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:49:29 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001351115.1_8489_7_12_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001351115.1_8489_7_12_genomic-UK.fna.paf
+    jobid: 44
+    wildcards: sample=GCA_001351115.1_8489_7_12_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:49:29 2022]
+Finished job 32.
+2 of 171 steps (1%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:49:29 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001350935.1_8489_7_18_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001350935.1_8489_7_18_genomic-UK.fna.paf
+    jobid: 14
+    wildcards: sample=GCA_001350935.1_8489_7_18_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:49:33 2022]
+Finished job 44.
+3 of 171 steps (2%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:49:33 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001351255.1_8489_7_5_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001351255.1_8489_7_5_genomic-UK.fna.paf
+    jobid: 80
+    wildcards: sample=GCA_001351255.1_8489_7_5_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:49:33 2022]
+Finished job 14.
+4 of 171 steps (2%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:49:33 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001350915.1_8489_7_10_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001350915.1_8489_7_10_genomic-UK.fna.paf
+    jobid: 8
+    wildcards: sample=GCA_001350915.1_8489_7_10_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:49:36 2022]
+Finished job 80.
+5 of 171 steps (3%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:49:37 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001566905.1_ASM156690v1_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001566905.1_ASM156690v1_genomic-UK.fna.paf
+    jobid: 170
+    wildcards: sample=GCA_001566905.1_ASM156690v1_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:49:37 2022]
+Finished job 8.
+6 of 171 steps (4%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:49:37 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001351455.1_8489_7_31_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001351455.1_8489_7_31_genomic-UK.fna.paf
+    jobid: 140
+    wildcards: sample=GCA_001351455.1_8489_7_31_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:49:42 2022]
+Finished job 170.
+7 of 171 steps (4%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:49:42 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001351575.1_8489_7_29_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001351575.1_8489_7_29_genomic-UK.fna.paf
+    jobid: 158
+    wildcards: sample=GCA_001351575.1_8489_7_29_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:49:42 2022]
+Finished job 140.
+8 of 171 steps (5%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:49:42 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001351395.1_8489_7_8_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001351395.1_8489_7_8_genomic-UK.fna.paf
+    jobid: 122
+    wildcards: sample=GCA_001351395.1_8489_7_8_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:49:46 2022]
+Finished job 158.
+9 of 171 steps (5%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:49:46 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001350995.1_8489_7_11_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001350995.1_8489_7_11_genomic-UK.fna.srt.paf
+    jobid: 31
+    wildcards: sample=GCA_001350995.1_8489_7_11_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:49:47 2022]
+Finished job 122.
+10 of 171 steps (6%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:49:47 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001351415.1_8489_7_3_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001351415.1_8489_7_3_genomic-UK.fna.paf
+    jobid: 128
+    wildcards: sample=GCA_001351415.1_8489_7_3_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:49:48 2022]
+Finished job 31.
+11 of 171 steps (6%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:49:48 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001351595.1_8489_7_23_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001351595.1_8489_7_23_genomic-UK.fna.paf
+    jobid: 164
+    wildcards: sample=GCA_001351595.1_8489_7_23_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:49:50 2022]
+Finished job 128.
+12 of 171 steps (7%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:49:50 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001350975.1_8489_7_28_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001350975.1_8489_7_28_genomic-UK.fna.paf
+    jobid: 26
+    wildcards: sample=GCA_001350975.1_8489_7_28_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:49:52 2022]
+Finished job 164.
+13 of 171 steps (8%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:49:52 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001351355.1_8489_7_32_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001351355.1_8489_7_32_genomic-UK.fna.paf
+    jobid: 110
+    wildcards: sample=GCA_001351355.1_8489_7_32_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:49:54 2022]
+Finished job 26.
+14 of 171 steps (8%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:49:54 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001350955.1_8489_7_19_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001350955.1_8489_7_19_genomic-UK.fna.paf
+    jobid: 20
+    wildcards: sample=GCA_001350955.1_8489_7_19_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:49:56 2022]
+Finished job 110.
+15 of 171 steps (9%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:49:56 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001351155.1_8489_7_14_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001351155.1_8489_7_14_genomic-UK.fna.paf
+    jobid: 56
+    wildcards: sample=GCA_001351155.1_8489_7_14_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:49:58 2022]
+Finished job 20.
+16 of 171 steps (9%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:49:58 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001351075.1_8489_7_27_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001351075.1_8489_7_27_genomic-UK.fna.paf
+    jobid: 38
+    wildcards: sample=GCA_001351075.1_8489_7_27_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:00 2022]
+Finished job 56.
+17 of 171 steps (10%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:00 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001351275.1_8489_7_33_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001351275.1_8489_7_33_genomic-UK.fna.paf
+    jobid: 86
+    wildcards: sample=GCA_001351275.1_8489_7_33_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:02 2022]
+Finished job 38.
+18 of 171 steps (11%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:02 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001351455.1_8489_7_31_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001351455.1_8489_7_31_genomic-UK.fna.srt.paf
+    jobid: 139
+    wildcards: sample=GCA_001351455.1_8489_7_31_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:04 2022]
+Finished job 86.
+19 of 171 steps (11%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:04 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001351155.1_8489_7_14_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001351155.1_8489_7_14_genomic-UK.fna.srt.paf
+    jobid: 55
+    wildcards: sample=GCA_001351155.1_8489_7_14_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:04 2022]
+Finished job 139.
+20 of 171 steps (12%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:04 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001351455.1_8489_7_31_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001351455.1_8489_7_31_genomic-UK.fna.var.txt
+    jobid: 138
+    wildcards: sample=GCA_001351455.1_8489_7_31_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:06 2022]
+Finished job 55.
+21 of 171 steps (12%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:06 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001351155.1_8489_7_14_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001351155.1_8489_7_14_genomic-UK.fna.var.txt
+    jobid: 54
+    wildcards: sample=GCA_001351155.1_8489_7_14_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:06 2022]
+Finished job 138.
+22 of 171 steps (13%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:06 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001351315.1_8489_7_26_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001351315.1_8489_7_26_genomic-UK.fna.paf
+    jobid: 98
+    wildcards: sample=GCA_001351315.1_8489_7_26_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:08 2022]
+Finished job 54.
+23 of 171 steps (13%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:08 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001351155.1_8489_7_14_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001351155.1_8489_7_14_genomic-UK.fna.vcf
+    jobid: 53
+    wildcards: sample=GCA_001351155.1_8489_7_14_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:10 2022]
+Finished job 98.
+24 of 171 steps (14%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:10 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001351315.1_8489_7_26_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001351315.1_8489_7_26_genomic-UK.fna.srt.paf
+    jobid: 97
+    wildcards: sample=GCA_001351315.1_8489_7_26_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:11 2022]
+Finished job 97.
+25 of 171 steps (15%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:11 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001351315.1_8489_7_26_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001351315.1_8489_7_26_genomic-UK.fna.var.txt
+    jobid: 96
+    wildcards: sample=GCA_001351315.1_8489_7_26_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:11 2022]
+Finished job 53.
+26 of 171 steps (15%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:11 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001350935.1_8489_7_18_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001350935.1_8489_7_18_genomic-UK.fna.srt.paf
+    jobid: 13
+    wildcards: sample=GCA_001350935.1_8489_7_18_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:13 2022]
+Finished job 96.
+27 of 171 steps (16%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:13 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001351315.1_8489_7_26_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001351315.1_8489_7_26_genomic-UK.fna.vcf
+    jobid: 95
+    wildcards: sample=GCA_001351315.1_8489_7_26_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:13 2022]
+Finished job 13.
+28 of 171 steps (16%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:13 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001350935.1_8489_7_18_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001350935.1_8489_7_18_genomic-UK.fna.var.txt
+    jobid: 12
+    wildcards: sample=GCA_001350935.1_8489_7_18_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:16 2022]
+Finished job 12.
+29 of 171 steps (17%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:16 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001351135.1_8489_7_21_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001351135.1_8489_7_21_genomic-UK.fna.paf
+    jobid: 50
+    wildcards: sample=GCA_001351135.1_8489_7_21_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:16 2022]
+Finished job 95.
+30 of 171 steps (18%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:16 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001351315.1_8489_7_26_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001351315.1_8489_7_26_genomic-UK.fna.norm.vcf
+    jobid: 94
+    wildcards: sample=GCA_001351315.1_8489_7_26_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:19 2022]
+Finished job 94.
+31 of 171 steps (18%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:19 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001351275.1_8489_7_33_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001351275.1_8489_7_33_genomic-UK.fna.srt.paf
+    jobid: 85
+    wildcards: sample=GCA_001351275.1_8489_7_33_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:19 2022]
+Finished job 50.
+32 of 171 steps (19%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:19 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001351135.1_8489_7_21_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001351135.1_8489_7_21_genomic-UK.fna.srt.paf
+    jobid: 49
+    wildcards: sample=GCA_001351135.1_8489_7_21_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:21 2022]
+Finished job 85.
+33 of 171 steps (19%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:21 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001351315.1_8489_7_26_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001351315.1_8489_7_26_genomic-UK.fna.norm.vcf.gz
+    jobid: 93
+    wildcards: sample=GCA_001351315.1_8489_7_26_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:21 2022]
+Finished job 49.
+34 of 171 steps (20%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:21 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001351075.1_8489_7_27_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001351075.1_8489_7_27_genomic-UK.fna.srt.paf
+    jobid: 37
+    wildcards: sample=GCA_001351075.1_8489_7_27_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:23 2022]
+Finished job 93.
+35 of 171 steps (20%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:23 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001351295.1_8489_7_24_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001351295.1_8489_7_24_genomic-UK.fna.paf
+    jobid: 92
+    wildcards: sample=GCA_001351295.1_8489_7_24_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:23 2022]
+Finished job 37.
+36 of 171 steps (21%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:23 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001351075.1_8489_7_27_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001351075.1_8489_7_27_genomic-UK.fna.var.txt
+    jobid: 36
+    wildcards: sample=GCA_001351075.1_8489_7_27_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:25 2022]
+Finished job 36.
+37 of 171 steps (22%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:25 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001351075.1_8489_7_27_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001351075.1_8489_7_27_genomic-UK.fna.vcf
+    jobid: 35
+    wildcards: sample=GCA_001351075.1_8489_7_27_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:26 2022]
+Finished job 92.
+38 of 171 steps (22%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:26 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001351295.1_8489_7_24_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001351295.1_8489_7_24_genomic-UK.fna.srt.paf
+    jobid: 91
+    wildcards: sample=GCA_001351295.1_8489_7_24_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:28 2022]
+Finished job 35.
+39 of 171 steps (23%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:28 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001351455.1_8489_7_31_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001351455.1_8489_7_31_genomic-UK.fna.vcf
+    jobid: 137
+    wildcards: sample=GCA_001351455.1_8489_7_31_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:28 2022]
+Finished job 91.
+40 of 171 steps (23%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:28 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001350935.1_8489_7_18_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001350935.1_8489_7_18_genomic-UK.fna.vcf
+    jobid: 11
+    wildcards: sample=GCA_001350935.1_8489_7_18_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:30 2022]
+Finished job 137.
+41 of 171 steps (24%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:30 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001351115.1_8489_7_12_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001351115.1_8489_7_12_genomic-UK.fna.srt.paf
+    jobid: 43
+    wildcards: sample=GCA_001351115.1_8489_7_12_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:30 2022]
+Finished job 11.
+42 of 171 steps (25%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:30 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001351255.1_8489_7_5_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001351255.1_8489_7_5_genomic-UK.fna.srt.paf
+    jobid: 79
+    wildcards: sample=GCA_001351255.1_8489_7_5_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:32 2022]
+Finished job 43.
+43 of 171 steps (25%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:32 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001351115.1_8489_7_12_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001351115.1_8489_7_12_genomic-UK.fna.var.txt
+    jobid: 42
+    wildcards: sample=GCA_001351115.1_8489_7_12_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:32 2022]
+Finished job 79.
+44 of 171 steps (26%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:32 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001351255.1_8489_7_5_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001351255.1_8489_7_5_genomic-UK.fna.var.txt
+    jobid: 78
+    wildcards: sample=GCA_001351255.1_8489_7_5_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:34 2022]
+Finished job 42.
+45 of 171 steps (26%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:34 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001351115.1_8489_7_12_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001351115.1_8489_7_12_genomic-UK.fna.vcf
+    jobid: 41
+    wildcards: sample=GCA_001351115.1_8489_7_12_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:34 2022]
+Finished job 78.
+46 of 171 steps (27%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:34 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001351255.1_8489_7_5_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001351255.1_8489_7_5_genomic-UK.fna.vcf
+    jobid: 77
+    wildcards: sample=GCA_001351255.1_8489_7_5_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:37 2022]
+Finished job 41.
+47 of 171 steps (27%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:37 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001351115.1_8489_7_12_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001351115.1_8489_7_12_genomic-UK.fna.norm.vcf
+    jobid: 40
+    wildcards: sample=GCA_001351115.1_8489_7_12_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:37 2022]
+Finished job 77.
+48 of 171 steps (28%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:37 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001351255.1_8489_7_5_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001351255.1_8489_7_5_genomic-UK.fna.norm.vcf
+    jobid: 76
+    wildcards: sample=GCA_001351255.1_8489_7_5_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:39 2022]
+Finished job 40.
+49 of 171 steps (29%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:39 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001351115.1_8489_7_12_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001351115.1_8489_7_12_genomic-UK.fna.norm.vcf.gz
+    jobid: 39
+    wildcards: sample=GCA_001351115.1_8489_7_12_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:39 2022]
+Finished job 76.
+50 of 171 steps (29%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:39 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001350915.1_8489_7_10_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001350915.1_8489_7_10_genomic-UK.fna.srt.paf
+    jobid: 7
+    wildcards: sample=GCA_001350915.1_8489_7_10_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:40 2022]
+Finished job 39.
+51 of 171 steps (30%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:41 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001566905.1_ASM156690v1_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001566905.1_ASM156690v1_genomic-UK.fna.srt.paf
+    jobid: 169
+    wildcards: sample=GCA_001566905.1_ASM156690v1_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:41 2022]
+Finished job 7.
+52 of 171 steps (30%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:41 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001350915.1_8489_7_10_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001350915.1_8489_7_10_genomic-UK.fna.var.txt
+    jobid: 6
+    wildcards: sample=GCA_001350915.1_8489_7_10_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:42 2022]
+Finished job 169.
+53 of 171 steps (31%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:42 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001566905.1_ASM156690v1_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001566905.1_ASM156690v1_genomic-UK.fna.var.txt
+    jobid: 168
+    wildcards: sample=GCA_001566905.1_ASM156690v1_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:42 2022]
+Finished job 6.
+54 of 171 steps (32%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:42 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001350915.1_8489_7_10_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001350915.1_8489_7_10_genomic-UK.fna.vcf
+    jobid: 5
+    wildcards: sample=GCA_001350915.1_8489_7_10_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:44 2022]
+Finished job 168.
+55 of 171 steps (32%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:44 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001566905.1_ASM156690v1_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001566905.1_ASM156690v1_genomic-UK.fna.vcf
+    jobid: 167
+    wildcards: sample=GCA_001566905.1_ASM156690v1_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:45 2022]
+Finished job 5.
+56 of 171 steps (33%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:45 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001350915.1_8489_7_10_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001350915.1_8489_7_10_genomic-UK.fna.norm.vcf
+    jobid: 4
+    wildcards: sample=GCA_001350915.1_8489_7_10_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:46 2022]
+Finished job 167.
+57 of 171 steps (33%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:47 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001566905.1_ASM156690v1_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001566905.1_ASM156690v1_genomic-UK.fna.norm.vcf
+    jobid: 166
+    wildcards: sample=GCA_001566905.1_ASM156690v1_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:47 2022]
+Finished job 4.
+58 of 171 steps (34%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:47 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001351415.1_8489_7_3_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001351415.1_8489_7_3_genomic-UK.fna.srt.paf
+    jobid: 127
+    wildcards: sample=GCA_001351415.1_8489_7_3_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:48 2022]
+Finished job 127.
+59 of 171 steps (35%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:48 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001351415.1_8489_7_3_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001351415.1_8489_7_3_genomic-UK.fna.var.txt
+    jobid: 126
+    wildcards: sample=GCA_001351415.1_8489_7_3_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:49 2022]
+Finished job 166.
+60 of 171 steps (35%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:49 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001566905.1_ASM156690v1_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001566905.1_ASM156690v1_genomic-UK.fna.norm.vcf.gz
+    jobid: 165
+    wildcards: sample=GCA_001566905.1_ASM156690v1_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:50 2022]
+Finished job 126.
+61 of 171 steps (36%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:50 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001351415.1_8489_7_3_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001351415.1_8489_7_3_genomic-UK.fna.vcf
+    jobid: 125
+    wildcards: sample=GCA_001351415.1_8489_7_3_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:50 2022]
+Finished job 165.
+62 of 171 steps (36%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:50 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001351595.1_8489_7_23_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001351595.1_8489_7_23_genomic-UK.fna.srt.paf
+    jobid: 163
+    wildcards: sample=GCA_001351595.1_8489_7_23_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:52 2022]
+Finished job 163.
+63 of 171 steps (37%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:52 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001351595.1_8489_7_23_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001351595.1_8489_7_23_genomic-UK.fna.var.txt
+    jobid: 162
+    wildcards: sample=GCA_001351595.1_8489_7_23_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:53 2022]
+Finished job 125.
+64 of 171 steps (37%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:53 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001351075.1_8489_7_27_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001351075.1_8489_7_27_genomic-UK.fna.norm.vcf
+    jobid: 34
+    wildcards: sample=GCA_001351075.1_8489_7_27_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:54 2022]
+Finished job 162.
+65 of 171 steps (38%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:54 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001351415.1_8489_7_3_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001351415.1_8489_7_3_genomic-UK.fna.norm.vcf
+    jobid: 124
+    wildcards: sample=GCA_001351415.1_8489_7_3_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:55 2022]
+Finished job 34.
+66 of 171 steps (39%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:55 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001351255.1_8489_7_5_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001351255.1_8489_7_5_genomic-UK.fna.norm.vcf.gz
+    jobid: 75
+    wildcards: sample=GCA_001351255.1_8489_7_5_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:56 2022]
+Finished job 124.
+67 of 171 steps (39%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:57 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001351295.1_8489_7_24_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001351295.1_8489_7_24_genomic-UK.fna.var.txt
+    jobid: 90
+    wildcards: sample=GCA_001351295.1_8489_7_24_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:57 2022]
+Finished job 75.
+68 of 171 steps (40%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:57 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001351235.1_8489_7_25_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001351235.1_8489_7_25_genomic-UK.fna.srt.paf
+    jobid: 73
+    wildcards: sample=GCA_001351235.1_8489_7_25_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:59 2022]
+Finished job 90.
+69 of 171 steps (40%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:59 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001351295.1_8489_7_24_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001351295.1_8489_7_24_genomic-UK.fna.vcf
+    jobid: 89
+    wildcards: sample=GCA_001351295.1_8489_7_24_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:50:59 2022]
+Finished job 73.
+70 of 171 steps (41%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:50:59 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001351235.1_8489_7_25_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001351235.1_8489_7_25_genomic-UK.fna.var.txt
+    jobid: 72
+    wildcards: sample=GCA_001351235.1_8489_7_25_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:01 2022]
+Finished job 72.
+71 of 171 steps (42%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:01 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001351235.1_8489_7_25_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001351235.1_8489_7_25_genomic-UK.fna.vcf
+    jobid: 71
+    wildcards: sample=GCA_001351235.1_8489_7_25_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:01 2022]
+Finished job 89.
+72 of 171 steps (42%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:01 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001351275.1_8489_7_33_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001351275.1_8489_7_33_genomic-UK.fna.var.txt
+    jobid: 84
+    wildcards: sample=GCA_001351275.1_8489_7_33_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:03 2022]
+Finished job 84.
+73 of 171 steps (43%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:03 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001351275.1_8489_7_33_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001351275.1_8489_7_33_genomic-UK.fna.vcf
+    jobid: 83
+    wildcards: sample=GCA_001351275.1_8489_7_33_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:04 2022]
+Finished job 71.
+74 of 171 steps (43%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:04 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001351595.1_8489_7_23_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001351595.1_8489_7_23_genomic-UK.fna.vcf
+    jobid: 161
+    wildcards: sample=GCA_001351595.1_8489_7_23_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:06 2022]
+Finished job 83.
+75 of 171 steps (44%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:06 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001351275.1_8489_7_33_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001351275.1_8489_7_33_genomic-UK.fna.norm.vcf
+    jobid: 82
+    wildcards: sample=GCA_001351275.1_8489_7_33_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:06 2022]
+Finished job 161.
+76 of 171 steps (44%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:06 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001351155.1_8489_7_14_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001351155.1_8489_7_14_genomic-UK.fna.norm.vcf
+    jobid: 52
+    wildcards: sample=GCA_001351155.1_8489_7_14_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:07 2022]
+Finished job 82.
+77 of 171 steps (45%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:07 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001351275.1_8489_7_33_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001351275.1_8489_7_33_genomic-UK.fna.norm.vcf.gz
+    jobid: 81
+    wildcards: sample=GCA_001351275.1_8489_7_33_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:08 2022]
+Finished job 52.
+78 of 171 steps (46%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:08 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001351435.1_8489_7_22_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001351435.1_8489_7_22_genomic-UK.fna.paf
+    jobid: 134
+    wildcards: sample=GCA_001351435.1_8489_7_22_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:09 2022]
+Finished job 81.
+79 of 171 steps (46%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:09 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001351155.1_8489_7_14_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001351155.1_8489_7_14_genomic-UK.fna.norm.vcf.gz
+    jobid: 51
+    wildcards: sample=GCA_001351155.1_8489_7_14_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:11 2022]
+Finished job 134.
+80 of 171 steps (47%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:11 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001351435.1_8489_7_22_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001351435.1_8489_7_22_genomic-UK.fna.srt.paf
+    jobid: 133
+    wildcards: sample=GCA_001351435.1_8489_7_22_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:12 2022]
+Finished job 51.
+81 of 171 steps (47%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:12 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001351135.1_8489_7_21_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001351135.1_8489_7_21_genomic-UK.fna.var.txt
+    jobid: 48
+    wildcards: sample=GCA_001351135.1_8489_7_21_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:13 2022]
+Finished job 133.
+82 of 171 steps (48%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:13 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001351435.1_8489_7_22_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001351435.1_8489_7_22_genomic-UK.fna.var.txt
+    jobid: 132
+    wildcards: sample=GCA_001351435.1_8489_7_22_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:14 2022]
+Finished job 48.
+83 of 171 steps (49%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:14 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001351135.1_8489_7_21_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001351135.1_8489_7_21_genomic-UK.fna.vcf
+    jobid: 47
+    wildcards: sample=GCA_001351135.1_8489_7_21_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:15 2022]
+Finished job 132.
+84 of 171 steps (49%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:15 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001351435.1_8489_7_22_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001351435.1_8489_7_22_genomic-UK.fna.vcf
+    jobid: 131
+    wildcards: sample=GCA_001351435.1_8489_7_22_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:16 2022]
+Finished job 47.
+85 of 171 steps (50%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:16 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001351135.1_8489_7_21_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001351135.1_8489_7_21_genomic-UK.fna.norm.vcf
+    jobid: 46
+    wildcards: sample=GCA_001351135.1_8489_7_21_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:17 2022]
+Finished job 131.
+86 of 171 steps (50%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:17 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001351435.1_8489_7_22_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001351435.1_8489_7_22_genomic-UK.fna.norm.vcf
+    jobid: 130
+    wildcards: sample=GCA_001351435.1_8489_7_22_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:18 2022]
+Finished job 46.
+87 of 171 steps (51%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:18 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001351135.1_8489_7_21_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001351135.1_8489_7_21_genomic-UK.fna.norm.vcf.gz
+    jobid: 45
+    wildcards: sample=GCA_001351135.1_8489_7_21_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:19 2022]
+Finished job 130.
+88 of 171 steps (51%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:19 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001351435.1_8489_7_22_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001351435.1_8489_7_22_genomic-UK.fna.norm.vcf.gz
+    jobid: 129
+    wildcards: sample=GCA_001351435.1_8489_7_22_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:20 2022]
+Finished job 45.
+89 of 171 steps (52%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:20 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001350975.1_8489_7_28_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001350975.1_8489_7_28_genomic-UK.fna.srt.paf
+    jobid: 25
+    wildcards: sample=GCA_001350975.1_8489_7_28_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:21 2022]
+Finished job 129.
+90 of 171 steps (53%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:21 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001351595.1_8489_7_23_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001351595.1_8489_7_23_genomic-UK.fna.norm.vcf
+    jobid: 160
+    wildcards: sample=GCA_001351595.1_8489_7_23_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:22 2022]
+Finished job 25.
+91 of 171 steps (53%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:22 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001350975.1_8489_7_28_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001350975.1_8489_7_28_genomic-UK.fna.var.txt
+    jobid: 24
+    wildcards: sample=GCA_001350975.1_8489_7_28_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:24 2022]
+Finished job 160.
+92 of 171 steps (54%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:24 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001351595.1_8489_7_23_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001351595.1_8489_7_23_genomic-UK.fna.norm.vcf.gz
+    jobid: 159
+    wildcards: sample=GCA_001351595.1_8489_7_23_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:24 2022]
+Finished job 24.
+93 of 171 steps (54%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:24 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001350975.1_8489_7_28_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001350975.1_8489_7_28_genomic-UK.fna.vcf
+    jobid: 23
+    wildcards: sample=GCA_001350975.1_8489_7_28_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:26 2022]
+Finished job 159.
+94 of 171 steps (55%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:26 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001351175.1_8489_7_7_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001351175.1_8489_7_7_genomic-UK.fna.paf
+    jobid: 62
+    wildcards: sample=GCA_001351175.1_8489_7_7_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:27 2022]
+Finished job 23.
+95 of 171 steps (56%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:27 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001351235.1_8489_7_25_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001351235.1_8489_7_25_genomic-UK.fna.norm.vcf
+    jobid: 70
+    wildcards: sample=GCA_001351235.1_8489_7_25_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:28 2022]
+Finished job 62.
+96 of 171 steps (56%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:29 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001351415.1_8489_7_3_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001351415.1_8489_7_3_genomic-UK.fna.norm.vcf.gz
+    jobid: 123
+    wildcards: sample=GCA_001351415.1_8489_7_3_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:29 2022]
+Finished job 70.
+97 of 171 steps (57%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:29 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001351215.1_8489_7_20_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001351215.1_8489_7_20_genomic-UK.fna.paf
+    jobid: 68
+    wildcards: sample=GCA_001351215.1_8489_7_20_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:30 2022]
+Finished job 123.
+98 of 171 steps (57%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:31 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001351575.1_8489_7_29_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001351575.1_8489_7_29_genomic-UK.fna.srt.paf
+    jobid: 157
+    wildcards: sample=GCA_001351575.1_8489_7_29_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:32 2022]
+Finished job 68.
+99 of 171 steps (58%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:32 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001351215.1_8489_7_20_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001351215.1_8489_7_20_genomic-UK.fna.srt.paf
+    jobid: 67
+    wildcards: sample=GCA_001351215.1_8489_7_20_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:32 2022]
+Finished job 157.
+100 of 171 steps (58%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:32 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001351535.1_8489_7_4_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001351535.1_8489_7_4_genomic-UK.fna.paf
+    jobid: 152
+    wildcards: sample=GCA_001351535.1_8489_7_4_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:34 2022]
+Finished job 67.
+101 of 171 steps (59%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:34 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001351235.1_8489_7_25_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001351235.1_8489_7_25_genomic-UK.fna.norm.vcf.gz
+    jobid: 69
+    wildcards: sample=GCA_001351235.1_8489_7_25_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:36 2022]
+Finished job 152.
+102 of 171 steps (60%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:36 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001351575.1_8489_7_29_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001351575.1_8489_7_29_genomic-UK.fna.var.txt
+    jobid: 156
+    wildcards: sample=GCA_001351575.1_8489_7_29_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:36 2022]
+Finished job 69.
+103 of 171 steps (60%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:36 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001351375.1_8489_7_17_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001351375.1_8489_7_17_genomic-UK.fna.paf
+    jobid: 116
+    wildcards: sample=GCA_001351375.1_8489_7_17_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:38 2022]
+Finished job 156.
+104 of 171 steps (61%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:38 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001351575.1_8489_7_29_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001351575.1_8489_7_29_genomic-UK.fna.vcf
+    jobid: 155
+    wildcards: sample=GCA_001351575.1_8489_7_29_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:39 2022]
+Finished job 116.
+105 of 171 steps (61%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:39 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001351395.1_8489_7_8_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001351395.1_8489_7_8_genomic-UK.fna.srt.paf
+    jobid: 121
+    wildcards: sample=GCA_001351395.1_8489_7_8_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:41 2022]
+Finished job 155.
+106 of 171 steps (62%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:41 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001350995.1_8489_7_11_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001350995.1_8489_7_11_genomic-UK.fna.var.txt
+    jobid: 30
+    wildcards: sample=GCA_001350995.1_8489_7_11_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:42 2022]
+Finished job 121.
+107 of 171 steps (63%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:42 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001351395.1_8489_7_8_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001351395.1_8489_7_8_genomic-UK.fna.var.txt
+    jobid: 120
+    wildcards: sample=GCA_001351395.1_8489_7_8_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:43 2022]
+Finished job 30.
+108 of 171 steps (63%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:43 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001351295.1_8489_7_24_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001351295.1_8489_7_24_genomic-UK.fna.norm.vcf
+    jobid: 88
+    wildcards: sample=GCA_001351295.1_8489_7_24_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:44 2022]
+Finished job 120.
+109 of 171 steps (64%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:44 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001351395.1_8489_7_8_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001351395.1_8489_7_8_genomic-UK.fna.vcf
+    jobid: 119
+    wildcards: sample=GCA_001351395.1_8489_7_8_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:45 2022]
+Finished job 88.
+110 of 171 steps (64%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:45 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001350915.1_8489_7_10_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001350915.1_8489_7_10_genomic-UK.fna.norm.vcf.gz
+    jobid: 3
+    wildcards: sample=GCA_001350915.1_8489_7_10_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:46 2022]
+Finished job 119.
+111 of 171 steps (65%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:46 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001351375.1_8489_7_17_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001351375.1_8489_7_17_genomic-UK.fna.srt.paf
+    jobid: 115
+    wildcards: sample=GCA_001351375.1_8489_7_17_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:48 2022]
+Finished job 3.
+112 of 171 steps (65%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:48 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001351575.1_8489_7_29_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001351575.1_8489_7_29_genomic-UK.fna.norm.vcf
+    jobid: 154
+    wildcards: sample=GCA_001351575.1_8489_7_29_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:48 2022]
+Finished job 115.
+113 of 171 steps (66%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:48 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001351535.1_8489_7_4_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001351535.1_8489_7_4_genomic-UK.fna.srt.paf
+    jobid: 151
+    wildcards: sample=GCA_001351535.1_8489_7_4_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:49 2022]
+Finished job 154.
+114 of 171 steps (67%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:49 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001350995.1_8489_7_11_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001350995.1_8489_7_11_genomic-UK.fna.vcf
+    jobid: 29
+    wildcards: sample=GCA_001350995.1_8489_7_11_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:50 2022]
+Finished job 151.
+115 of 171 steps (67%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:50 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001351375.1_8489_7_17_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001351375.1_8489_7_17_genomic-UK.fna.var.txt
+    jobid: 114
+    wildcards: sample=GCA_001351375.1_8489_7_17_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:52 2022]
+Finished job 29.
+116 of 171 steps (68%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:52 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001351215.1_8489_7_20_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001351215.1_8489_7_20_genomic-UK.fna.var.txt
+    jobid: 66
+    wildcards: sample=GCA_001351215.1_8489_7_20_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:52 2022]
+Finished job 114.
+117 of 171 steps (68%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:52 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001350995.1_8489_7_11_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001350995.1_8489_7_11_genomic-UK.fna.norm.vcf
+    jobid: 28
+    wildcards: sample=GCA_001350995.1_8489_7_11_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:54 2022]
+Finished job 66.
+118 of 171 steps (69%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:54 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001351335.1_8489_7_6_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001351335.1_8489_7_6_genomic-UK.fna.paf
+    jobid: 104
+    wildcards: sample=GCA_001351335.1_8489_7_6_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:55 2022]
+Finished job 28.
+119 of 171 steps (70%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:55 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001350995.1_8489_7_11_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001350995.1_8489_7_11_genomic-UK.fna.norm.vcf.gz
+    jobid: 27
+    wildcards: sample=GCA_001350995.1_8489_7_11_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:57 2022]
+Finished job 27.
+120 of 171 steps (70%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:57 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001351355.1_8489_7_32_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001351355.1_8489_7_32_genomic-UK.fna.srt.paf
+    jobid: 109
+    wildcards: sample=GCA_001351355.1_8489_7_32_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:58 2022]
+Finished job 104.
+121 of 171 steps (71%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:58 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001351515.1_8489_7_9_genomic-UK.fna
+    output: intermediate/pafsamples/GCA_001351515.1_8489_7_9_genomic-UK.fna.paf
+    jobid: 146
+    wildcards: sample=GCA_001351515.1_8489_7_9_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:51:59 2022]
+Finished job 109.
+122 of 171 steps (71%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:51:59 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001351355.1_8489_7_32_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001351355.1_8489_7_32_genomic-UK.fna.var.txt
+    jobid: 108
+    wildcards: sample=GCA_001351355.1_8489_7_32_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:01 2022]
+Finished job 146.
+123 of 171 steps (72%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:01 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001351175.1_8489_7_7_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001351175.1_8489_7_7_genomic-UK.fna.srt.paf
+    jobid: 61
+    wildcards: sample=GCA_001351175.1_8489_7_7_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:01 2022]
+Finished job 108.
+124 of 171 steps (73%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:01 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001351355.1_8489_7_32_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001351355.1_8489_7_32_genomic-UK.fna.vcf
+    jobid: 107
+    wildcards: sample=GCA_001351355.1_8489_7_32_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:03 2022]
+Finished job 61.
+125 of 171 steps (73%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:03 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001351175.1_8489_7_7_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001351175.1_8489_7_7_genomic-UK.fna.var.txt
+    jobid: 60
+    wildcards: sample=GCA_001351175.1_8489_7_7_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:04 2022]
+Finished job 107.
+126 of 171 steps (74%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:04 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001351395.1_8489_7_8_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001351395.1_8489_7_8_genomic-UK.fna.norm.vcf
+    jobid: 118
+    wildcards: sample=GCA_001351395.1_8489_7_8_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:05 2022]
+Finished job 60.
+127 of 171 steps (74%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:05 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001350955.1_8489_7_19_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001350955.1_8489_7_19_genomic-UK.fna.srt.paf
+    jobid: 19
+    wildcards: sample=GCA_001350955.1_8489_7_19_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:06 2022]
+Finished job 118.
+128 of 171 steps (75%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:06 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001351295.1_8489_7_24_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001351295.1_8489_7_24_genomic-UK.fna.norm.vcf.gz
+    jobid: 87
+    wildcards: sample=GCA_001351295.1_8489_7_24_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:07 2022]
+Finished job 19.
+129 of 171 steps (75%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:07 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001350955.1_8489_7_19_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001350955.1_8489_7_19_genomic-UK.fna.var.txt
+    jobid: 18
+    wildcards: sample=GCA_001350955.1_8489_7_19_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:08 2022]
+Finished job 87.
+130 of 171 steps (76%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:09 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001351455.1_8489_7_31_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001351455.1_8489_7_31_genomic-UK.fna.norm.vcf
+    jobid: 136
+    wildcards: sample=GCA_001351455.1_8489_7_31_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:09 2022]
+Finished job 18.
+131 of 171 steps (77%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:09 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001350935.1_8489_7_18_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001350935.1_8489_7_18_genomic-UK.fna.norm.vcf
+    jobid: 10
+    wildcards: sample=GCA_001350935.1_8489_7_18_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:11 2022]
+Finished job 136.
+132 of 171 steps (77%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:11 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001350975.1_8489_7_28_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001350975.1_8489_7_28_genomic-UK.fna.norm.vcf
+    jobid: 22
+    wildcards: sample=GCA_001350975.1_8489_7_28_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:12 2022]
+Finished job 10.
+133 of 171 steps (78%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:12 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001350935.1_8489_7_18_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001350935.1_8489_7_18_genomic-UK.fna.norm.vcf.gz
+    jobid: 9
+    wildcards: sample=GCA_001350935.1_8489_7_18_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:14 2022]
+Finished job 22.
+134 of 171 steps (78%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:14 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001351455.1_8489_7_31_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001351455.1_8489_7_31_genomic-UK.fna.norm.vcf.gz
+    jobid: 135
+    wildcards: sample=GCA_001351455.1_8489_7_31_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:15 2022]
+Finished job 9.
+135 of 171 steps (79%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:15 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001351075.1_8489_7_27_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001351075.1_8489_7_27_genomic-UK.fna.norm.vcf.gz
+    jobid: 33
+    wildcards: sample=GCA_001351075.1_8489_7_27_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:16 2022]
+Finished job 135.
+136 of 171 steps (80%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:16 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001351175.1_8489_7_7_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001351175.1_8489_7_7_genomic-UK.fna.vcf
+    jobid: 59
+    wildcards: sample=GCA_001351175.1_8489_7_7_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:17 2022]
+Finished job 33.
+137 of 171 steps (80%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:17 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001350955.1_8489_7_19_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001350955.1_8489_7_19_genomic-UK.fna.vcf
+    jobid: 17
+    wildcards: sample=GCA_001350955.1_8489_7_19_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:19 2022]
+Finished job 59.
+138 of 171 steps (81%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:19 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001351175.1_8489_7_7_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001351175.1_8489_7_7_genomic-UK.fna.norm.vcf
+    jobid: 58
+    wildcards: sample=GCA_001351175.1_8489_7_7_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:19 2022]
+Finished job 17.
+139 of 171 steps (81%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:19 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001350955.1_8489_7_19_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001350955.1_8489_7_19_genomic-UK.fna.norm.vcf
+    jobid: 16
+    wildcards: sample=GCA_001350955.1_8489_7_19_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:21 2022]
+Finished job 58.
+140 of 171 steps (82%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:21 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001351355.1_8489_7_32_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001351355.1_8489_7_32_genomic-UK.fna.norm.vcf
+    jobid: 106
+    wildcards: sample=GCA_001351355.1_8489_7_32_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:22 2022]
+Finished job 16.
+141 of 171 steps (82%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:22 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001350955.1_8489_7_19_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001350955.1_8489_7_19_genomic-UK.fna.norm.vcf.gz
+    jobid: 15
+    wildcards: sample=GCA_001350955.1_8489_7_19_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:23 2022]
+Finished job 106.
+142 of 171 steps (83%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:23 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001351355.1_8489_7_32_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001351355.1_8489_7_32_genomic-UK.fna.norm.vcf.gz
+    jobid: 105
+    wildcards: sample=GCA_001351355.1_8489_7_32_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:24 2022]
+Finished job 15.
+143 of 171 steps (84%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:24 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001351215.1_8489_7_20_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001351215.1_8489_7_20_genomic-UK.fna.vcf
+    jobid: 65
+    wildcards: sample=GCA_001351215.1_8489_7_20_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:26 2022]
+Finished job 105.
+144 of 171 steps (84%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:26 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001351175.1_8489_7_7_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001351175.1_8489_7_7_genomic-UK.fna.norm.vcf.gz
+    jobid: 57
+    wildcards: sample=GCA_001351175.1_8489_7_7_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:27 2022]
+Finished job 65.
+145 of 171 steps (85%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:27 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001351215.1_8489_7_20_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001351215.1_8489_7_20_genomic-UK.fna.norm.vcf
+    jobid: 64
+    wildcards: sample=GCA_001351215.1_8489_7_20_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:28 2022]
+Finished job 57.
+146 of 171 steps (85%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:28 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001350975.1_8489_7_28_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001350975.1_8489_7_28_genomic-UK.fna.norm.vcf.gz
+    jobid: 21
+    wildcards: sample=GCA_001350975.1_8489_7_28_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:29 2022]
+Finished job 64.
+147 of 171 steps (86%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:29 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001351215.1_8489_7_20_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001351215.1_8489_7_20_genomic-UK.fna.norm.vcf.gz
+    jobid: 63
+    wildcards: sample=GCA_001351215.1_8489_7_20_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:29 2022]
+Finished job 21.
+148 of 171 steps (87%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:29 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001351395.1_8489_7_8_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001351395.1_8489_7_8_genomic-UK.fna.norm.vcf.gz
+    jobid: 117
+    wildcards: sample=GCA_001351395.1_8489_7_8_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:31 2022]
+Finished job 63.
+149 of 171 steps (87%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:31 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001351515.1_8489_7_9_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001351515.1_8489_7_9_genomic-UK.fna.srt.paf
+    jobid: 145
+    wildcards: sample=GCA_001351515.1_8489_7_9_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:31 2022]
+Finished job 117.
+150 of 171 steps (88%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:31 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_001351335.1_8489_7_6_genomic-UK.fna.paf
+    output: intermediate/pafsamples/GCA_001351335.1_8489_7_6_genomic-UK.fna.srt.paf
+    jobid: 103
+    wildcards: sample=GCA_001351335.1_8489_7_6_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:33 2022]
+Finished job 145.
+151 of 171 steps (88%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:33 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001351515.1_8489_7_9_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001351515.1_8489_7_9_genomic-UK.fna.var.txt
+    jobid: 144
+    wildcards: sample=GCA_001351515.1_8489_7_9_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:33 2022]
+Finished job 103.
+152 of 171 steps (89%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:33 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001351335.1_8489_7_6_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001351335.1_8489_7_6_genomic-UK.fna.var.txt
+    jobid: 102
+    wildcards: sample=GCA_001351335.1_8489_7_6_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:35 2022]
+Finished job 144.
+153 of 171 steps (89%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:35 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001351575.1_8489_7_29_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001351575.1_8489_7_29_genomic-UK.fna.norm.vcf.gz
+    jobid: 153
+    wildcards: sample=GCA_001351575.1_8489_7_29_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:35 2022]
+Finished job 102.
+154 of 171 steps (90%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:35 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001351335.1_8489_7_6_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001351335.1_8489_7_6_genomic-UK.fna.vcf
+    jobid: 101
+    wildcards: sample=GCA_001351335.1_8489_7_6_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:37 2022]
+Finished job 153.
+155 of 171 steps (91%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:37 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_001351535.1_8489_7_4_genomic-UK.fna.srt.paf
+    output: intermediate/pafcalls/GCA_001351535.1_8489_7_4_genomic-UK.fna.var.txt
+    jobid: 150
+    wildcards: sample=GCA_001351535.1_8489_7_4_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:38 2022]
+Finished job 101.
+156 of 171 steps (91%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:38 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001351375.1_8489_7_17_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001351375.1_8489_7_17_genomic-UK.fna.vcf
+    jobid: 113
+    wildcards: sample=GCA_001351375.1_8489_7_17_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:39 2022]
+Finished job 150.
+157 of 171 steps (92%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:39 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001351535.1_8489_7_4_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001351535.1_8489_7_4_genomic-UK.fna.vcf
+    jobid: 149
+    wildcards: sample=GCA_001351535.1_8489_7_4_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:41 2022]
+Finished job 113.
+158 of 171 steps (92%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:41 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_001351515.1_8489_7_9_genomic-UK.fna.var.txt
+    output: intermediate/vcfs/GCA_001351515.1_8489_7_9_genomic-UK.fna.vcf
+    jobid: 143
+    wildcards: sample=GCA_001351515.1_8489_7_9_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:41 2022]
+Finished job 149.
+159 of 171 steps (93%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:41 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001351335.1_8489_7_6_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001351335.1_8489_7_6_genomic-UK.fna.norm.vcf
+    jobid: 100
+    wildcards: sample=GCA_001351335.1_8489_7_6_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:43 2022]
+Finished job 143.
+160 of 171 steps (94%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:43 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001351515.1_8489_7_9_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001351515.1_8489_7_9_genomic-UK.fna.norm.vcf
+    jobid: 142
+    wildcards: sample=GCA_001351515.1_8489_7_9_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:43 2022]
+Finished job 100.
+161 of 171 steps (94%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:43 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001351335.1_8489_7_6_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001351335.1_8489_7_6_genomic-UK.fna.norm.vcf.gz
+    jobid: 99
+    wildcards: sample=GCA_001351335.1_8489_7_6_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:45 2022]
+Finished job 99.
+162 of 171 steps (95%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:45 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001351535.1_8489_7_4_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001351535.1_8489_7_4_genomic-UK.fna.norm.vcf
+    jobid: 148
+    wildcards: sample=GCA_001351535.1_8489_7_4_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:45 2022]
+Finished job 142.
+163 of 171 steps (95%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:45 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_001351375.1_8489_7_17_genomic-UK.fna.vcf
+    output: intermediate/normVcfs/GCA_001351375.1_8489_7_17_genomic-UK.fna.norm.vcf
+    jobid: 112
+    wildcards: sample=GCA_001351375.1_8489_7_17_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:47 2022]
+Finished job 148.
+164 of 171 steps (96%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:47 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001351535.1_8489_7_4_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001351535.1_8489_7_4_genomic-UK.fna.norm.vcf.gz
+    jobid: 147
+    wildcards: sample=GCA_001351535.1_8489_7_4_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:47 2022]
+Finished job 112.
+165 of 171 steps (96%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:47 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001351375.1_8489_7_17_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001351375.1_8489_7_17_genomic-UK.fna.norm.vcf.gz
+    jobid: 111
+    wildcards: sample=GCA_001351375.1_8489_7_17_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:49 2022]
+Finished job 147.
+166 of 171 steps (97%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:49 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_001351515.1_8489_7_9_genomic-UK.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_001351515.1_8489_7_9_genomic-UK.fna.norm.vcf.gz
+    jobid: 141
+    wildcards: sample=GCA_001351515.1_8489_7_9_genomic-UK.fna
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:49 2022]
+Finished job 111.
+167 of 171 steps (98%) done
+[Sun Jan  9 14:52:50 2022]
+Finished job 141.
+168 of 171 steps (98%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:51 2022]
+rule mergeVcfs:
+    input: intermediate/normVcfs/GCA_001350915.1_8489_7_10_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001350935.1_8489_7_18_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001350955.1_8489_7_19_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001350975.1_8489_7_28_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001350995.1_8489_7_11_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001351075.1_8489_7_27_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001351115.1_8489_7_12_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001351135.1_8489_7_21_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001351155.1_8489_7_14_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001351175.1_8489_7_7_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001351215.1_8489_7_20_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001351235.1_8489_7_25_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001351255.1_8489_7_5_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001351275.1_8489_7_33_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001351295.1_8489_7_24_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001351315.1_8489_7_26_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001351335.1_8489_7_6_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001351355.1_8489_7_32_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001351375.1_8489_7_17_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001351395.1_8489_7_8_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001351415.1_8489_7_3_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001351435.1_8489_7_22_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001351455.1_8489_7_31_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001351515.1_8489_7_9_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001351535.1_8489_7_4_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001351575.1_8489_7_29_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001351595.1_8489_7_23_genomic-UK.fna.norm.vcf.gz, intermediate/normVcfs/GCA_001566905.1_ASM156690v1_genomic-UK.fna.norm.vcf.gz
+    output: MERGED.vcf
+    jobid: 2
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:54 2022]
+Finished job 2.
+169 of 171 steps (99%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:54 2022]
+rule end:
+    input: MERGED.vcf
+    output: all.txt
+    jobid: 1
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:56 2022]
+Finished job 1.
+170 of 171 steps (99%) done
+Select jobs to execute...
+
+[Sun Jan  9 14:52:56 2022]
+localrule all:
+    input: all.txt
+    jobid: 0
+    resources: tmpdir=/tmp
+
+[Sun Jan  9 14:52:56 2022]
+Finished job 0.
+171 of 171 steps (100%) done
+Complete log: /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/log/2022-01-09T144923.732882.snakemake.log

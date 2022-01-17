@@ -1,0 +1,19 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/conda/c68eb4b7302b5235c4b7c19ca7e26b8d
+exec_prefix=/mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/conda/c68eb4b7302b5235c4b7c19ca7e26b8d
+libdir=/mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/conda/c68eb4b7302b5235c4b7c19ca7e26b8d/lib
+includedir=/mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/conda/c68eb4b7302b5235c4b7c19ca7e26b8d/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://tukaani.org/xz/
+Version: 5.2.5
+Cflags: -I${includedir}
+Libs: -L${libdir} -llzma
+Libs.private: -pthread -lrt  -lpthread

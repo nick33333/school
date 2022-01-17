@@ -1,0 +1,11 @@
+Building DAG of jobs...
+MissingInputException in line 131 of /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/Snakefile:
+Missing input files for rule fin:
+normVcfs/GCA_001641025.1_ASM164102v1_genomic.fna
+normVcfs/GCA_001027105.1_ASM102710v1_genomic.fna
+normVcfs/GCA_004136255.1_ASM413625v1_genomic.fna
+normVcfs/GCA_002895385.1_ASM289538v1_genomic.fna
+normVcfs/GCA_006364675.1_ASM636467v1_genomic.fna
+normVcfs/GCA_006094915.1_ASM609491v1_genomic.fna
+normVcfs/GCA_003945425.1_ASM394542v1_genomic.fna
+normVcfs/GCA_900607265.1_BPH2003_genomic.fna

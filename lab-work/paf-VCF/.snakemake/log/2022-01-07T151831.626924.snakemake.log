@@ -1,0 +1,149 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job stats:
+job        count    min threads    max threads
+-------  -------  -------------  -------------
+all            1              1              1
+fin            1              1              1
+paf2vcf        8              1              1
+total         10              1              1
+
+Select jobs to execute...
+
+[Fri Jan  7 15:18:32 2022]
+rule paf2vcf:
+    input: pafcalls/GCA_004136255.1_ASM413625v1_genomic.fna.var.txt
+    output: vcfs/GCA_004136255.1_ASM413625v1_genomic.fna.vcf
+    jobid: 18
+    reason: Missing output files: vcfs/GCA_004136255.1_ASM413625v1_genomic.fna.vcf
+    wildcards: sample=GCA_004136255.1_ASM413625v1_genomic.fna
+    resources: tmpdir=/tmp
+
+
+[Fri Jan  7 15:18:32 2022]
+rule paf2vcf:
+    input: pafcalls/GCA_006094915.1_ASM609491v1_genomic.fna.var.txt
+    output: vcfs/GCA_006094915.1_ASM609491v1_genomic.fna.vcf
+    jobid: 22
+    reason: Missing output files: vcfs/GCA_006094915.1_ASM609491v1_genomic.fna.vcf
+    wildcards: sample=GCA_006094915.1_ASM609491v1_genomic.fna
+    resources: tmpdir=/tmp
+
+[Fri Jan  7 15:18:33 2022]
+Finished job 18.
+1 of 10 steps (10%) done
+Select jobs to execute...
+
+[Fri Jan  7 15:18:33 2022]
+rule paf2vcf:
+    input: pafcalls/GCA_006364675.1_ASM636467v1_genomic.fna.var.txt
+    output: vcfs/GCA_006364675.1_ASM636467v1_genomic.fna.vcf
+    jobid: 26
+    reason: Missing output files: vcfs/GCA_006364675.1_ASM636467v1_genomic.fna.vcf
+    wildcards: sample=GCA_006364675.1_ASM636467v1_genomic.fna
+    resources: tmpdir=/tmp
+
+[Fri Jan  7 15:18:33 2022]
+Finished job 22.
+2 of 10 steps (20%) done
+Select jobs to execute...
+
+[Fri Jan  7 15:18:33 2022]
+rule paf2vcf:
+    input: pafcalls/GCA_003945425.1_ASM394542v1_genomic.fna.var.txt
+    output: vcfs/GCA_003945425.1_ASM394542v1_genomic.fna.vcf
+    jobid: 14
+    reason: Missing output files: vcfs/GCA_003945425.1_ASM394542v1_genomic.fna.vcf
+    wildcards: sample=GCA_003945425.1_ASM394542v1_genomic.fna
+    resources: tmpdir=/tmp
+
+[Fri Jan  7 15:18:33 2022]
+Finished job 26.
+3 of 10 steps (30%) done
+Select jobs to execute...
+
+[Fri Jan  7 15:18:34 2022]
+rule paf2vcf:
+    input: pafcalls/GCA_002895385.1_ASM289538v1_genomic.fna.var.txt
+    output: vcfs/GCA_002895385.1_ASM289538v1_genomic.fna.vcf
+    jobid: 10
+    reason: Missing output files: vcfs/GCA_002895385.1_ASM289538v1_genomic.fna.vcf
+    wildcards: sample=GCA_002895385.1_ASM289538v1_genomic.fna
+    resources: tmpdir=/tmp
+
+[Fri Jan  7 15:18:34 2022]
+Finished job 14.
+4 of 10 steps (40%) done
+Select jobs to execute...
+
+[Fri Jan  7 15:18:34 2022]
+rule paf2vcf:
+    input: pafcalls/GCA_900607265.1_BPH2003_genomic.fna.var.txt
+    output: vcfs/GCA_900607265.1_BPH2003_genomic.fna.vcf
+    jobid: 30
+    reason: Missing output files: vcfs/GCA_900607265.1_BPH2003_genomic.fna.vcf
+    wildcards: sample=GCA_900607265.1_BPH2003_genomic.fna
+    resources: tmpdir=/tmp
+
+[Fri Jan  7 15:18:35 2022]
+Finished job 10.
+5 of 10 steps (50%) done
+Select jobs to execute...
+
+[Fri Jan  7 15:18:35 2022]
+rule paf2vcf:
+    input: pafcalls/GCA_001027105.1_ASM102710v1_genomic.fna.var.txt
+    output: vcfs/GCA_001027105.1_ASM102710v1_genomic.fna.vcf
+    jobid: 2
+    reason: Missing output files: vcfs/GCA_001027105.1_ASM102710v1_genomic.fna.vcf
+    wildcards: sample=GCA_001027105.1_ASM102710v1_genomic.fna
+    resources: tmpdir=/tmp
+
+[Fri Jan  7 15:18:35 2022]
+Finished job 30.
+6 of 10 steps (60%) done
+Select jobs to execute...
+
+[Fri Jan  7 15:18:35 2022]
+rule paf2vcf:
+    input: pafcalls/GCA_001641025.1_ASM164102v1_genomic.fna.var.txt
+    output: vcfs/GCA_001641025.1_ASM164102v1_genomic.fna.vcf
+    jobid: 6
+    reason: Missing output files: vcfs/GCA_001641025.1_ASM164102v1_genomic.fna.vcf
+    wildcards: sample=GCA_001641025.1_ASM164102v1_genomic.fna
+    resources: tmpdir=/tmp
+
+[Fri Jan  7 15:18:36 2022]
+Finished job 2.
+7 of 10 steps (70%) done
+[Fri Jan  7 15:18:36 2022]
+Finished job 6.
+8 of 10 steps (80%) done
+Select jobs to execute...
+
+[Fri Jan  7 15:18:36 2022]
+rule fin:
+    input: vcfs/GCA_001027105.1_ASM102710v1_genomic.fna.vcf, vcfs/GCA_001641025.1_ASM164102v1_genomic.fna.vcf, vcfs/GCA_002895385.1_ASM289538v1_genomic.fna.vcf, vcfs/GCA_003945425.1_ASM394542v1_genomic.fna.vcf, vcfs/GCA_004136255.1_ASM413625v1_genomic.fna.vcf, vcfs/GCA_006094915.1_ASM609491v1_genomic.fna.vcf, vcfs/GCA_006364675.1_ASM636467v1_genomic.fna.vcf, vcfs/GCA_900607265.1_BPH2003_genomic.fna.vcf
+    output: all.txt
+    jobid: 1
+    reason: Missing output files: all.txt; Input files updated by another job: vcfs/GCA_006094915.1_ASM609491v1_genomic.fna.vcf, vcfs/GCA_002895385.1_ASM289538v1_genomic.fna.vcf, vcfs/GCA_004136255.1_ASM413625v1_genomic.fna.vcf, vcfs/GCA_006364675.1_ASM636467v1_genomic.fna.vcf, vcfs/GCA_003945425.1_ASM394542v1_genomic.fna.vcf, vcfs/GCA_001641025.1_ASM164102v1_genomic.fna.vcf, vcfs/GCA_900607265.1_BPH2003_genomic.fna.vcf, vcfs/GCA_001027105.1_ASM102710v1_genomic.fna.vcf
+    resources: tmpdir=/tmp
+
+[Fri Jan  7 15:18:38 2022]
+Finished job 1.
+9 of 10 steps (90%) done
+Select jobs to execute...
+
+[Fri Jan  7 15:18:38 2022]
+localrule all:
+    input: all.txt
+    jobid: 0
+    reason: Input files updated by another job: all.txt
+    resources: tmpdir=/tmp
+
+[Fri Jan  7 15:18:38 2022]
+Finished job 0.
+10 of 10 steps (100%) done
+Complete log: /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/log/2022-01-07T151831.626924.snakemake.log

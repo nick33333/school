@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job            count    min threads    max threads
+-----------  -------  -------------  -------------
+all                1              1              1
+callPaf            8              1              1
+fastas2Pafs        8              1              1
+fin                1              1              1
+paf2vcf            8              1              1
+sortPaf            8              1              1
+total             34              1              1
+
+Select jobs to execute...
+
+[Fri Jan  7 14:13:33 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_006364675.1_ASM636467v1_genomic.fna
+    output: pafsamples/GCA_006364675.1_ASM636467v1_genomic.fna.paf
+    jobid: 29
+    reason: Missing output files: pafsamples/GCA_006364675.1_ASM636467v1_genomic.fna.paf
+    wildcards: sample=GCA_006364675.1_ASM636467v1_genomic.fna
+    resources: tmpdir=/tmp
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/log/2022-01-07T141329.899692.snakemake.log

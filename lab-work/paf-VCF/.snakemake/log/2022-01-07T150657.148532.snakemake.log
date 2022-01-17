@@ -1,0 +1,35 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job stats:
+job         count    min threads    max threads
+--------  -------  -------------  -------------
+all             1              1              1
+fin             1              1              1
+normVcfs        8              1              1
+total          10              1              1
+
+Select jobs to execute...
+
+[Fri Jan  7 15:06:57 2022]
+rule normVcfs:
+    input: vcfs/GCA_002895385.1_ASM289538v1_genomic.fna.vcf
+    output: normVcfs/GCA_002895385.1_ASM289538v1_genomic.fna.norm.vcf.gz
+    jobid: 12
+    reason: Missing output files: normVcfs/GCA_002895385.1_ASM289538v1_genomic.fna.norm.vcf.gz
+    wildcards: sample=GCA_002895385.1_ASM289538v1_genomic.fna
+    resources: tmpdir=/tmp
+
+[Fri Jan  7 15:06:57 2022]
+rule normVcfs:
+    input: vcfs/GCA_006364675.1_ASM636467v1_genomic.fna.vcf
+    output: normVcfs/GCA_006364675.1_ASM636467v1_genomic.fna.norm.vcf.gz
+    jobid: 32
+    reason: Missing output files: normVcfs/GCA_006364675.1_ASM636467v1_genomic.fna.norm.vcf.gz
+    wildcards: sample=GCA_006364675.1_ASM636467v1_genomic.fna
+    resources: tmpdir=/tmp
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/log/2022-01-07T150657.148532.snakemake.log

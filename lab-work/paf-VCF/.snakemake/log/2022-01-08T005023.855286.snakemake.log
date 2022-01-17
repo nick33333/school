@@ -1,0 +1,39 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job stats:
+job             count    min threads    max threads
+------------  -------  -------------  -------------
+all                 1              1              1
+callPaf             8              1              1
+end                 1              1              1
+fastas2Pafs         8              1              1
+mergeVcfs           1              1              1
+normVcfs            8              1              1
+paf2vcf             8              1              1
+prepNormVcfs        8              1              1
+sortPaf             8              1              1
+total              51              1              1
+
+Select jobs to execute...
+
+[Sat Jan  8 00:50:24 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_002895385.1_ASM289538v1_genomic.fna
+    output: intermediate/pafsamples/GCA_002895385.1_ASM289538v1_genomic.fna.paf
+    jobid: 20
+    wildcards: sample=GCA_002895385.1_ASM289538v1_genomic.fna
+    resources: tmpdir=/tmp
+
+[Sat Jan  8 00:50:24 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_900607265.1_BPH2003_genomic.fna
+    output: intermediate/pafsamples/GCA_900607265.1_BPH2003_genomic.fna.paf
+    jobid: 50
+    wildcards: sample=GCA_900607265.1_BPH2003_genomic.fna
+    resources: tmpdir=/tmp
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/log/2022-01-08T005023.855286.snakemake.log

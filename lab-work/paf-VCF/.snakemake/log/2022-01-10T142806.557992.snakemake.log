@@ -1,0 +1,6 @@
+Building DAG of jobs...
+WorkflowError:
+MissingInputException: Missing input files for rule fastas2Pafs:
+samples/GCA_017834975.1_ASM1783497v1_genomic.US
+MissingInputException: Missing input files for rule fastas2Pafs:
+samples/GCA_017834975.1_ASM1783497v1_genomic.US.srt

@@ -1,0 +1,37 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count    min threads    max threads
+-----  -------  -------------  -------------
+all          1              1              1
+tak          1              1              1
+total        2              1              1
+
+Select jobs to execute...
+
+[Fri Jan  7 02:56:53 2022]
+rule tak:
+    input: samples/GCA_001027105.1_ASM102710v1_genomic.fna, samples/GCA_001641025.1_ASM164102v1_genomic.fna, samples/GCA_002895385.1_ASM289538v1_genomic.fna, samples/GCA_003945425.1_ASM394542v1_genomic.fna, samples/GCA_004136255.1_ASM413625v1_genomic.fna, samples/GCA_006094915.1_ASM609491v1_genomic.fna, samples/GCA_006364675.1_ASM636467v1_genomic.fna, samples/GCA_900607265.1_BPH2003_genomic.fna
+    output: all.txt
+    jobid: 1
+    reason: Missing output files: all.txt
+    resources: tmpdir=/tmp
+
+[Fri Jan  7 02:56:55 2022]
+Finished job 1.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Fri Jan  7 02:56:55 2022]
+localrule all:
+    input: all.txt
+    jobid: 0
+    reason: Input files updated by another job: all.txt
+    resources: tmpdir=/tmp
+
+[Fri Jan  7 02:56:55 2022]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/log/2022-01-07T025653.254568.snakemake.log

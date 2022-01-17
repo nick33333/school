@@ -1,0 +1,3 @@
+CreateRuleException:
+The name paf2vcf is already used by another rule
+  File "/mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/Snakefile", line 107, in <module>

@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/conda/c68eb4b7302b5235c4b7c19ca7e26b8d
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: SQLite
+Description: SQL database engine
+Version: 3.37.0
+Libs: -L${libdir} -lsqlite3
+Libs.private: -lz -lm -ldl -lpthread 
+Cflags: -I${includedir}

@@ -1,0 +1,197 @@
+Building DAG of jobs...
+Job stats:
+job            count    min threads    max threads
+-----------  -------  -------------  -------------
+all                1              1              1
+callPaf            8              1              1
+fastas2Pafs        8              1              1
+paf2vcf            1              1              1
+sortPaf            8              1              1
+total             26              1              1
+
+[Fri Jan  7 13:20:00 2022]
+
+group job 1f939193-f477-48b2-b426-1d5525a67147 (jobs in lexicogr. order):
+
+    [Fri Jan  7 13:20:00 2022]
+    rule fastas2Pafs:
+        input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_002895385.1_ASM289538v1_genomic.fna
+        output: pafsamples/GCA_002895385.1_ASM289538v1_genomic.fna.paf (pipe)
+        jobid: 10
+        reason: Missing output files: pafsamples/GCA_002895385.1_ASM289538v1_genomic.fna.paf
+        wildcards: sample=GCA_002895385.1_ASM289538v1_genomic.fna
+        resources: tmpdir=/tmp
+
+
+    [Fri Jan  7 13:20:00 2022]
+    rule sortPaf:
+        input: pafsamples/GCA_002895385.1_ASM289538v1_genomic.fna.paf
+        output: pafsamples/GCA_002895385.1_ASM289538v1_genomic.fna.srt.paf
+        jobid: 9
+        reason: Missing output files: pafsamples/GCA_002895385.1_ASM289538v1_genomic.fna.srt.paf; Input files updated by another job: pafsamples/GCA_002895385.1_ASM289538v1_genomic.fna.paf
+        wildcards: sample=GCA_002895385.1_ASM289538v1_genomic.fna
+        resources: tmpdir=/tmp
+
+[Fri Jan  7 13:20:00 2022]
+
+group job 1f939193-f477-48b2-b426-1d5525a67147 (jobs in lexicogr. order):
+
+    [Fri Jan  7 13:20:00 2022]
+    rule fastas2Pafs:
+        input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_004136255.1_ASM413625v1_genomic.fna
+        output: pafsamples/GCA_004136255.1_ASM413625v1_genomic.fna.paf (pipe)
+        jobid: 16
+        reason: Missing output files: pafsamples/GCA_004136255.1_ASM413625v1_genomic.fna.paf
+        wildcards: sample=GCA_004136255.1_ASM413625v1_genomic.fna
+        resources: tmpdir=/tmp
+
+
+    [Fri Jan  7 13:20:00 2022]
+    rule sortPaf:
+        input: pafsamples/GCA_004136255.1_ASM413625v1_genomic.fna.paf
+        output: pafsamples/GCA_004136255.1_ASM413625v1_genomic.fna.srt.paf
+        jobid: 15
+        reason: Missing output files: pafsamples/GCA_004136255.1_ASM413625v1_genomic.fna.srt.paf; Input files updated by another job: pafsamples/GCA_004136255.1_ASM413625v1_genomic.fna.paf
+        wildcards: sample=GCA_004136255.1_ASM413625v1_genomic.fna
+        resources: tmpdir=/tmp
+
+[Fri Jan  7 13:20:00 2022]
+
+group job 1f939193-f477-48b2-b426-1d5525a67147 (jobs in lexicogr. order):
+
+    [Fri Jan  7 13:20:00 2022]
+    rule fastas2Pafs:
+        input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001641025.1_ASM164102v1_genomic.fna
+        output: pafsamples/GCA_001641025.1_ASM164102v1_genomic.fna.paf (pipe)
+        jobid: 7
+        reason: Missing output files: pafsamples/GCA_001641025.1_ASM164102v1_genomic.fna.paf
+        wildcards: sample=GCA_001641025.1_ASM164102v1_genomic.fna
+        resources: tmpdir=/tmp
+
+
+    [Fri Jan  7 13:20:00 2022]
+    rule sortPaf:
+        input: pafsamples/GCA_001641025.1_ASM164102v1_genomic.fna.paf
+        output: pafsamples/GCA_001641025.1_ASM164102v1_genomic.fna.srt.paf
+        jobid: 6
+        reason: Missing output files: pafsamples/GCA_001641025.1_ASM164102v1_genomic.fna.srt.paf; Input files updated by another job: pafsamples/GCA_001641025.1_ASM164102v1_genomic.fna.paf
+        wildcards: sample=GCA_001641025.1_ASM164102v1_genomic.fna
+        resources: tmpdir=/tmp
+
+[Fri Jan  7 13:20:00 2022]
+
+group job 1f939193-f477-48b2-b426-1d5525a67147 (jobs in lexicogr. order):
+
+    [Fri Jan  7 13:20:00 2022]
+    rule fastas2Pafs:
+        input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_003945425.1_ASM394542v1_genomic.fna
+        output: pafsamples/GCA_003945425.1_ASM394542v1_genomic.fna.paf (pipe)
+        jobid: 13
+        reason: Missing output files: pafsamples/GCA_003945425.1_ASM394542v1_genomic.fna.paf
+        wildcards: sample=GCA_003945425.1_ASM394542v1_genomic.fna
+        resources: tmpdir=/tmp
+
+
+    [Fri Jan  7 13:20:00 2022]
+    rule sortPaf:
+        input: pafsamples/GCA_003945425.1_ASM394542v1_genomic.fna.paf
+        output: pafsamples/GCA_003945425.1_ASM394542v1_genomic.fna.srt.paf
+        jobid: 12
+        reason: Missing output files: pafsamples/GCA_003945425.1_ASM394542v1_genomic.fna.srt.paf; Input files updated by another job: pafsamples/GCA_003945425.1_ASM394542v1_genomic.fna.paf
+        wildcards: sample=GCA_003945425.1_ASM394542v1_genomic.fna
+        resources: tmpdir=/tmp
+
+[Fri Jan  7 13:20:00 2022]
+
+group job 1f939193-f477-48b2-b426-1d5525a67147 (jobs in lexicogr. order):
+
+    [Fri Jan  7 13:20:00 2022]
+    rule fastas2Pafs:
+        input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_900607265.1_BPH2003_genomic.fna
+        output: pafsamples/GCA_900607265.1_BPH2003_genomic.fna.paf (pipe)
+        jobid: 25
+        reason: Missing output files: pafsamples/GCA_900607265.1_BPH2003_genomic.fna.paf
+        wildcards: sample=GCA_900607265.1_BPH2003_genomic.fna
+        resources: tmpdir=/tmp
+
+
+    [Fri Jan  7 13:20:00 2022]
+    rule sortPaf:
+        input: pafsamples/GCA_900607265.1_BPH2003_genomic.fna.paf
+        output: pafsamples/GCA_900607265.1_BPH2003_genomic.fna.srt.paf
+        jobid: 24
+        reason: Missing output files: pafsamples/GCA_900607265.1_BPH2003_genomic.fna.srt.paf; Input files updated by another job: pafsamples/GCA_900607265.1_BPH2003_genomic.fna.paf
+        wildcards: sample=GCA_900607265.1_BPH2003_genomic.fna
+        resources: tmpdir=/tmp
+
+[Fri Jan  7 13:20:00 2022]
+
+group job 1f939193-f477-48b2-b426-1d5525a67147 (jobs in lexicogr. order):
+
+    [Fri Jan  7 13:20:00 2022]
+    rule fastas2Pafs:
+        input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_006364675.1_ASM636467v1_genomic.fna
+        output: pafsamples/GCA_006364675.1_ASM636467v1_genomic.fna.paf (pipe)
+        jobid: 22
+        reason: Missing output files: pafsamples/GCA_006364675.1_ASM636467v1_genomic.fna.paf
+        wildcards: sample=GCA_006364675.1_ASM636467v1_genomic.fna
+        resources: tmpdir=/tmp
+
+
+    [Fri Jan  7 13:20:00 2022]
+    rule sortPaf:
+        input: pafsamples/GCA_006364675.1_ASM636467v1_genomic.fna.paf
+        output: pafsamples/GCA_006364675.1_ASM636467v1_genomic.fna.srt.paf
+        jobid: 21
+        reason: Missing output files: pafsamples/GCA_006364675.1_ASM636467v1_genomic.fna.srt.paf; Input files updated by another job: pafsamples/GCA_006364675.1_ASM636467v1_genomic.fna.paf
+        wildcards: sample=GCA_006364675.1_ASM636467v1_genomic.fna
+        resources: tmpdir=/tmp
+
+[Fri Jan  7 13:20:00 2022]
+
+group job 1f939193-f477-48b2-b426-1d5525a67147 (jobs in lexicogr. order):
+
+    [Fri Jan  7 13:20:00 2022]
+    rule fastas2Pafs:
+        input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_001027105.1_ASM102710v1_genomic.fna
+        output: pafsamples/GCA_001027105.1_ASM102710v1_genomic.fna.paf (pipe)
+        jobid: 4
+        reason: Missing output files: pafsamples/GCA_001027105.1_ASM102710v1_genomic.fna.paf
+        wildcards: sample=GCA_001027105.1_ASM102710v1_genomic.fna
+        resources: tmpdir=/tmp
+
+
+    [Fri Jan  7 13:20:00 2022]
+    rule sortPaf:
+        input: pafsamples/GCA_001027105.1_ASM102710v1_genomic.fna.paf
+        output: pafsamples/GCA_001027105.1_ASM102710v1_genomic.fna.srt.paf
+        jobid: 3
+        reason: Missing output files: pafsamples/GCA_001027105.1_ASM102710v1_genomic.fna.srt.paf; Input files updated by another job: pafsamples/GCA_001027105.1_ASM102710v1_genomic.fna.paf
+        wildcards: sample=GCA_001027105.1_ASM102710v1_genomic.fna
+        resources: tmpdir=/tmp
+
+[Fri Jan  7 13:20:00 2022]
+
+group job 1f939193-f477-48b2-b426-1d5525a67147 (jobs in lexicogr. order):
+
+    [Fri Jan  7 13:20:00 2022]
+    rule fastas2Pafs:
+        input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_006094915.1_ASM609491v1_genomic.fna
+        output: pafsamples/GCA_006094915.1_ASM609491v1_genomic.fna.paf (pipe)
+        jobid: 19
+        reason: Missing output files: pafsamples/GCA_006094915.1_ASM609491v1_genomic.fna.paf
+        wildcards: sample=GCA_006094915.1_ASM609491v1_genomic.fna
+        resources: tmpdir=/tmp
+
+
+    [Fri Jan  7 13:20:00 2022]
+    rule sortPaf:
+        input: pafsamples/GCA_006094915.1_ASM609491v1_genomic.fna.paf
+        output: pafsamples/GCA_006094915.1_ASM609491v1_genomic.fna.srt.paf
+        jobid: 18
+        reason: Missing output files: pafsamples/GCA_006094915.1_ASM609491v1_genomic.fna.srt.paf; Input files updated by another job: pafsamples/GCA_006094915.1_ASM609491v1_genomic.fna.paf
+        wildcards: sample=GCA_006094915.1_ASM609491v1_genomic.fna
+        resources: tmpdir=/tmp
+
+WorkflowError:
+Job needs threads=2 but only threads=1 are available. This is likely because two jobs are connected via a pipe and have to run simultaneously. Consider providing more resources (e.g. via --cores).

@@ -1,0 +1,25 @@
+Building DAG of jobs...
+Job stats:
+job            count    min threads    max threads
+-----------  -------  -------------  -------------
+all                1              1              1
+callPaf            8              1              1
+fastas2Pafs        8              1              1
+paf2vcf            1              1              1
+sortPaf            8              1              1
+total             26              1              1
+
+[Fri Jan  7 13:16:32 2022]
+
+group job 784299b1-bf4c-4de5-aae8-9f995a85442c (jobs in lexicogr. order):
+
+    [Fri Jan  7 13:16:32 2022]
+    rule callPaf:
+        input: pafsamples/GCA_003945425.1_ASM394542v1_genomic.fna.srt.paf
+        output: pafcalls/GCA_003945425.1_ASM394542v1_genomic.fna.var.txt
+        jobid: 11
+        wildcards: sample=GCA_003945425.1_ASM394542v1_genomic.fna
+        resources: tmpdir=/tmp
+
+RuleException in line 60 of /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/Snakefile:
+NameError: The name 'sample' is unknown in this context. Did you mean 'wildcards.sample'?

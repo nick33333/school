@@ -1,0 +1,91 @@
+'''
+Pipeline takes genome asm samples + 1 reference asm for an organism
+and calls variants.
+'''
+
+import os
+
+samples = os.listdir("samples") # snakemake pipeline uses files in samples as input
+print(samples)
+if "intermediate" not in os.listdir():
+    os.system("mkdir intermediate")
+
+rule all:
+    input:
+        "all.txt"
+    
+rule fastas2Pafs:
+    input:
+        ref = "ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna", # hard coded
+        samp = "samples/{sample}"
+    output:
+        "intermediate/pafsamples/{sample}.paf"
+    run:
+        shell("minimap2 -cx asm5 -t8 --cs {input.ref} {input.samp} > {output}")
+
+rule sortPaf:
+    input:
+        "intermediate/pafsamples/{sample}.paf"
+    output:
+        "intermediate/pafsamples/{sample}.srt.paf"
+    run:
+        shell("sort -k6,6 -k8,8n {input} > {output}"),
+        shell("rm {input}")
+
+rule callPaf:
+    input:
+        "intermediate/pafsamples/{sample}.srt.paf"
+    output:
+        "intermediate/pafcalls/{sample}.var.txt"
+    run:
+        shell("k8 paftools.js call {input} > {output}"),
+        shell("rm {input}")
+
+rule paf2vcf:
+    input: 
+        "intermediate/pafcalls/{sample}.var.txt"
+    output:
+        "intermediate/vcfs/{sample}.vcf" # In order to make this, u have to wait till all input is created
+    run:
+        shell("python paf2vcf.py -i {input} -o {output}"),
+        shell("rm {input}")
+
+rule normVcfs:
+    input:
+        "intermediate/vcfs/{sample}.vcf"
+    output:
+        "intermediate/normVcfs/{sample}.norm.vcf"
+    run:
+        shell("bgzip {input}"),
+        shell("tabix -p vcf {input}.gz"),
+        shell("bcftools norm --check-ref x --fasta-ref ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna {input}.gz  > {output}"),
+        shell("rm {input}.gz {input}.gz.tbi")
+
+rule prepNormVcfs:
+    input:
+        "intermediate/normVcfs/{sample}.norm.vcf"
+    output:
+        "intermediate/normVcfs/{sample}.norm.vcf.gz"
+    run:
+        shell("bgzip {input} -c > {output}"),
+        shell("rm {input}"),
+        shell("tabix -p vcf {output}")
+        
+
+rule mergeVcfs:
+    input:
+        expand("intermediate/normVcfs/{sample}.norm.vcf.gz", sample = samples)
+    output:
+        "MERGED.vcf"
+    run:
+        shell("bcftools merge -O v -o {output} intermediate/normVcfs/*.norm.vcf.gz"),
+        shell("rm {input} intermediate/normVcfs/*.tbi")
+
+rule end:
+    input: 
+        "MERGED.vcf"
+    output:
+        "all.txt" # In order to make this, u have to wait till all input is created
+    run:
+        # print({input})
+        shell("touch {output}")

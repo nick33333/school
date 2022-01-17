@@ -1,0 +1,26 @@
+Building DAG of jobs...
+Job stats:
+job            count    min threads    max threads
+-----------  -------  -------------  -------------
+all                1              1              1
+callPaf            8              1              1
+fastas2Pafs        8              1              1
+paf2vcf            1              1              1
+sortPaf            8              1              1
+total             26              1              1
+
+[Fri Jan  7 13:16:50 2022]
+
+group job c45ddefe-9623-4e6c-b34e-1887a61655e6 (jobs in lexicogr. order):
+
+    [Fri Jan  7 13:16:50 2022]
+    rule callPaf:
+        input: pafsamples/GCA_001027105.1_ASM102710v1_genomic.fna.srt.paf
+        output: pafcalls/GCA_001027105.1_ASM102710v1_genomic.fna.var.txt
+        jobid: 2
+        reason: Missing output files: pafcalls/GCA_001027105.1_ASM102710v1_genomic.fna.var.txt; Input files updated by another job: pafsamples/GCA_001027105.1_ASM102710v1_genomic.fna.srt.paf
+        wildcards: sample=GCA_001027105.1_ASM102710v1_genomic.fna
+        resources: tmpdir=/tmp
+
+RuleException in line 60 of /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/Snakefile:
+NameError: The name 'sample' is unknown in this context. Did you mean 'wildcards.sample'?

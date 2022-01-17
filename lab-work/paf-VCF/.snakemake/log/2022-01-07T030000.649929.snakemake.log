@@ -1,0 +1,24 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count    min threads    max threads
+-----  -------  -------------  -------------
+all          1              1              1
+tak          1              1              1
+total        2              1              1
+
+Select jobs to execute...
+
+[Fri Jan  7 03:00:01 2022]
+rule tak:
+    input: samples/GCA_001027105.1_ASM102710v1_genomic.fna, samples/GCA_001027105.1_ASM102710v1_genomic.fna.txt, samples/GCA_001641025.1_ASM164102v1_genomic.fna, samples/GCA_001641025.1_ASM164102v1_genomic.fna.txt, samples/GCA_002895385.1_ASM289538v1_genomic.fna, samples/GCA_002895385.1_ASM289538v1_genomic.fna.txt, samples/GCA_003945425.1_ASM394542v1_genomic.fna, samples/GCA_003945425.1_ASM394542v1_genomic.fna.txt, samples/GCA_004136255.1_ASM413625v1_genomic.fna, samples/GCA_004136255.1_ASM413625v1_genomic.fna.txt, samples/GCA_006094915.1_ASM609491v1_genomic.fna, samples/GCA_006094915.1_ASM609491v1_genomic.fna.txt, samples/GCA_006364675.1_ASM636467v1_genomic.fna, samples/GCA_006364675.1_ASM636467v1_genomic.fna.txt, samples/GCA_900607265.1_BPH2003_genomic.fna, samples/GCA_900607265.1_BPH2003_genomic.fna.txt
+    output: all.txt
+    jobid: 1
+    reason: Missing output files: all.txt
+    resources: tmpdir=/tmp
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/log/2022-01-07T030000.649929.snakemake.log

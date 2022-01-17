@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count    min threads    max threads
+---------  -------  -------------  -------------
+all              1              1              1
+fin              1              1              1
+mergeVcfs        1              1              1
+total            3              1              1
+
+Select jobs to execute...
+
+[Fri Jan  7 15:30:58 2022]
+rule mergeVcfs:
+    input: normVcfs/GCA_001027105.1_ASM102710v1_genomic.fna.norm.vcf.gz, normVcfs/GCA_001641025.1_ASM164102v1_genomic.fna.norm.vcf.gz, normVcfs/GCA_002895385.1_ASM289538v1_genomic.fna.norm.vcf.gz, normVcfs/GCA_003945425.1_ASM394542v1_genomic.fna.norm.vcf.gz, normVcfs/GCA_004136255.1_ASM413625v1_genomic.fna.norm.vcf.gz, normVcfs/GCA_006094915.1_ASM609491v1_genomic.fna.norm.vcf.gz, normVcfs/GCA_006364675.1_ASM636467v1_genomic.fna.norm.vcf.gz, normVcfs/GCA_900607265.1_BPH2003_genomic.fna.norm.vcf.gz
+    output: MERGED.vcf
+    jobid: 2
+    reason: Missing output files: MERGED.vcf
+    resources: tmpdir=/tmp
+
+[Fri Jan  7 15:30:58 2022]
+Error in rule mergeVcfs:
+    jobid: 2
+    output: MERGED.vcf
+    shell:
+        bcftools merge -O v -o MERGED.vcf normVcfs/*.norm.gz
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/log/2022-01-07T153057.384692.snakemake.log

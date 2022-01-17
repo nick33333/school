@@ -1,0 +1,13 @@
+==> 2022-01-07 13:26:40 <==
+# cmd: /home/nick/anaconda3/envs/snakemake/bin/mamba create --quiet --file /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/conda/9e127b4dc599a4d28e4c2c10ec8f1d1e.yaml --prefix /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/conda/9e127b4dc599a4d28e4c2c10ec8f1d1e
+# conda version: 4.11.0
++bioconda/linux-64::k8-0.2.5-h9a82719_1
++bioconda/linux-64::minimap2-2.24-h5bf99c6_0
++conda-forge/linux-64::_libgcc_mutex-0.1-conda_forge
++conda-forge/linux-64::_openmp_mutex-4.5-1_gnu
++conda-forge/linux-64::libgcc-ng-11.2.0-h1d223b6_11
++conda-forge/linux-64::libgomp-11.2.0-h1d223b6_11
++conda-forge/linux-64::libstdcxx-ng-11.2.0-he4da1e4_11
++conda-forge/linux-64::libzlib-1.2.11-h36c2ea0_1013
++conda-forge/linux-64::zlib-1.2.11-h36c2ea0_1013
+# update specs: ['minimap2=2.24', 'k8=0.2.5']

@@ -1,0 +1,2 @@
+SyntaxError in line 23 of /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/Snakefile:
+Command must be given as string after the shell keyword. (Snakefile, line 23)

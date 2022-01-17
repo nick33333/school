@@ -1,0 +1,115 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job stats:
+job             count    min threads    max threads
+------------  -------  -------------  -------------
+all                 1              1              1
+callPaf             1              1              1
+end                 1              1              1
+fastas2Pafs         1              1              1
+mergeVcfs           1              1              1
+normVcfs            1              1              1
+paf2vcf             1              1              1
+prepNormVcfs        1              1              1
+sortPaf             1              1              1
+total               9              1              1
+
+Select jobs to execute...
+
+[Mon Jan 10 14:22:59 2022]
+rule fastas2Pafs:
+    input: ref/staph-aureus-ref-GCF_000013425.1_ASM1342v1_genomic.fna, samples/GCA_017834975.1_ASM1783497v1_genomic.US.fna
+    output: intermediate/pafsamples/GCA_017834975.1_ASM1783497v1_genomic.US.fna.paf
+    jobid: 8
+    reason: Missing output files: intermediate/pafsamples/GCA_017834975.1_ASM1783497v1_genomic.US.fna.paf
+    wildcards: sample=GCA_017834975.1_ASM1783497v1_genomic.US.fna
+    resources: tmpdir=/tmp
+
+[Mon Jan 10 14:23:02 2022]
+Finished job 8.
+1 of 9 steps (11%) done
+Select jobs to execute...
+
+[Mon Jan 10 14:23:02 2022]
+rule sortPaf:
+    input: intermediate/pafsamples/GCA_017834975.1_ASM1783497v1_genomic.US.fna.paf
+    output: intermediate/pafsamples/GCA_017834975.1_ASM1783497v1_genomic.US.fna.srt.paf
+    jobid: 7
+    reason: Missing output files: intermediate/pafsamples/GCA_017834975.1_ASM1783497v1_genomic.US.fna.srt.paf; Input files updated by another job: intermediate/pafsamples/GCA_017834975.1_ASM1783497v1_genomic.US.fna.paf
+    wildcards: sample=GCA_017834975.1_ASM1783497v1_genomic.US.fna
+    resources: tmpdir=/tmp
+
+[Mon Jan 10 14:23:04 2022]
+Finished job 7.
+2 of 9 steps (22%) done
+Select jobs to execute...
+
+[Mon Jan 10 14:23:04 2022]
+rule callPaf:
+    input: intermediate/pafsamples/GCA_017834975.1_ASM1783497v1_genomic.US.fna.srt.paf
+    output: intermediate/pafcalls/GCA_017834975.1_ASM1783497v1_genomic.US.fna.var.txt
+    jobid: 6
+    reason: Missing output files: intermediate/pafcalls/GCA_017834975.1_ASM1783497v1_genomic.US.fna.var.txt; Input files updated by another job: intermediate/pafsamples/GCA_017834975.1_ASM1783497v1_genomic.US.fna.srt.paf
+    wildcards: sample=GCA_017834975.1_ASM1783497v1_genomic.US.fna
+    resources: tmpdir=/tmp
+
+[Mon Jan 10 14:23:07 2022]
+Finished job 6.
+3 of 9 steps (33%) done
+Select jobs to execute...
+
+[Mon Jan 10 14:23:07 2022]
+rule paf2vcf:
+    input: intermediate/pafcalls/GCA_017834975.1_ASM1783497v1_genomic.US.fna.var.txt
+    output: intermediate/vcfs/GCA_017834975.1_ASM1783497v1_genomic.US.fna.vcf
+    jobid: 5
+    reason: Missing output files: intermediate/vcfs/GCA_017834975.1_ASM1783497v1_genomic.US.fna.vcf; Input files updated by another job: intermediate/pafcalls/GCA_017834975.1_ASM1783497v1_genomic.US.fna.var.txt
+    wildcards: sample=GCA_017834975.1_ASM1783497v1_genomic.US.fna
+    resources: tmpdir=/tmp
+
+[Mon Jan 10 14:23:10 2022]
+Finished job 5.
+4 of 9 steps (44%) done
+Select jobs to execute...
+
+[Mon Jan 10 14:23:10 2022]
+rule normVcfs:
+    input: intermediate/vcfs/GCA_017834975.1_ASM1783497v1_genomic.US.fna.vcf
+    output: intermediate/normVcfs/GCA_017834975.1_ASM1783497v1_genomic.US.fna.norm.vcf
+    jobid: 4
+    reason: Missing output files: intermediate/normVcfs/GCA_017834975.1_ASM1783497v1_genomic.US.fna.norm.vcf; Input files updated by another job: intermediate/vcfs/GCA_017834975.1_ASM1783497v1_genomic.US.fna.vcf
+    wildcards: sample=GCA_017834975.1_ASM1783497v1_genomic.US.fna
+    resources: tmpdir=/tmp
+
+[Mon Jan 10 14:23:13 2022]
+Finished job 4.
+5 of 9 steps (56%) done
+Select jobs to execute...
+
+[Mon Jan 10 14:23:13 2022]
+rule prepNormVcfs:
+    input: intermediate/normVcfs/GCA_017834975.1_ASM1783497v1_genomic.US.fna.norm.vcf
+    output: intermediate/normVcfs/GCA_017834975.1_ASM1783497v1_genomic.US.fna.norm.vcf.gz
+    jobid: 3
+    reason: Missing output files: intermediate/normVcfs/GCA_017834975.1_ASM1783497v1_genomic.US.fna.norm.vcf.gz; Input files updated by another job: intermediate/normVcfs/GCA_017834975.1_ASM1783497v1_genomic.US.fna.norm.vcf
+    wildcards: sample=GCA_017834975.1_ASM1783497v1_genomic.US.fna
+    resources: tmpdir=/tmp
+
+[Mon Jan 10 14:23:15 2022]
+Finished job 3.
+6 of 9 steps (67%) done
+Select jobs to execute...
+
+[Mon Jan 10 14:23:15 2022]
+rule mergeVcfs:
+    input: intermediate/normVcfs/GCA_017834975.1_ASM1783497v1_genomic.US.fna.norm.vcf.gz
+    output: MERGED.vcf
+    jobid: 2
+    reason: Missing output files: MERGED.vcf; Input files updated by another job: intermediate/normVcfs/GCA_017834975.1_ASM1783497v1_genomic.US.fna.norm.vcf.gz
+    resources: tmpdir=/tmp
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /mnt/c/Users/light/Desktop/american-education-system/lab-notes/paf-VCF/.snakemake/log/2022-01-10T142258.310965.snakemake.log
